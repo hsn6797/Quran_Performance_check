@@ -1,0 +1,46 @@
+[
+    {
+        "ind": 6222,
+        "chapter_no": 112,
+        "verse_no": 1,
+        "arabic_text": "﴾قُلْ هُوَ اللَّهُ أَحَدٌ﴿١",
+        "urdu_text": "کہو کہ وہ (ذات پاک جس کا نام) الله (ہے) ایک ہے",
+        "arabic_start_time": "00:00:00.000000",
+        "arabic_end_time": "00:00:03.108375",
+        "urdu_start_time": "00:00:03.108375",
+        "urdu_end_time": "00:00:08.202250"
+    },
+    {
+        "ind": 6223,
+        "chapter_no": 112,
+        "verse_no": 2,
+        "arabic_text": "﴾اللَّهُ الصَّمَدُ﴿٢",
+        "urdu_text": "معبود برحق جو بےنیاز ہے",
+        "arabic_start_time": "00:00:08.202250",
+        "arabic_end_time": "00:00:10.866500",
+        "urdu_start_time": "00:00:10.866500",
+        "urdu_end_time": "00:00:14.131875"
+    },
+    {
+        "ind": 6224,
+        "chapter_no": 112,
+        "verse_no": 3,
+        "arabic_text": "﴾لَمْ يَلِدْ وَلَمْ يُولَدْ﴿٣",
+        "urdu_text": "نہ کسی کا باپ ہے اور نہ کسی کا بیٹا",
+        "arabic_start_time": "00:00:14.131875",
+        "arabic_end_time": "00:00:17.240250",
+        "urdu_start_time": "00:00:17.240250",
+        "urdu_end_time": "00:00:20.688375"
+    },
+    {
+        "ind": 6225,
+        "chapter_no": 112,
+        "verse_no": 4,
+        "arabic_text": "﴾وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ﴿٤",
+        "urdu_text": "اور کوئی اس کا ہمسر نہیں",
+        "arabic_start_time": "00:00:20.688375",
+        "arabic_end_time": "00:00:25.677625",
+        "urdu_start_time": "00:00:25.677625",
+        "urdu_end_time": "00:00:28.080875"
+    }
+]

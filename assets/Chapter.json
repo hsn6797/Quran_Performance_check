@@ -1,0 +1,72 @@
+[
+    {
+        "ind": 73,
+        "name": "المزمل",
+        "english_name": "Al Muzzamil",
+        "title": "The One Wraped in Garments",
+        "is_maki": 1,
+        "total_verses": 20,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 19,
+                "total_verses": 19,
+                "file_name": "073-Al-Muzzamil-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 20,
+                "total_verses": 1,
+                "file_name": "073-Al-Muzzamil-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 112,
+        "name": "الإخلاص",
+        "english_name": "Al Ikhlas",
+        "title": "The Purity",
+        "is_maki": 1,
+        "total_verses": 4,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 4,
+                "total_verses": 4,
+                "file_name": "112-Al-Ikhlas-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 113,
+        "name": "الفلق",
+        "english_name": "Al Falaq",
+        "title": "The Daybreak",
+        "is_maki": 1,
+        "total_verses": 5,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 5,
+                "total_verses": 5,
+                "file_name": "113-Al-Falaq-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 114,
+        "name": "الناس",
+        "english_name": "Al Naas",
+        "title": "Mankind",
+        "is_maki": 1,
+        "total_verses": 6,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 6,
+                "total_verses": 6,
+                "file_name": "114-Al-Nass-Ruku-01.mp3"
+            }
+        ]
+    }
+]
