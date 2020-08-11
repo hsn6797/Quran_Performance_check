@@ -1,5 +1,51 @@
 [
     {
+        "ind": 30,
+        "name": "الروم",
+        "english_name": "Al Room",
+        "title": "Rome",
+        "is_maki": 1,
+        "total_verses": 60,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "030-Al-Room-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 19,
+                "total_verses": 9,
+                "file_name": "030-Al-Room-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 27,
+                "total_verses": 8,
+                "file_name": "030-Al-Room-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 28,
+                "last_verse": 40,
+                "total_verses": 13,
+                "file_name": "030-Al-Room-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 53,
+                "total_verses": 13,
+                "file_name": "030-Al-Room-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 54,
+                "last_verse": 60,
+                "total_verses": 7,
+                "file_name": "030-Al-Room-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
         "ind": 73,
         "name": "المزمل",
         "english_name": "Al Muzzamil",

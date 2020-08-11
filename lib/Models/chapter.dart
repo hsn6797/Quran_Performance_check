@@ -1,6 +1,3 @@
-import 'package:audioplayerdb/Models/verse.dart';
-import '../database_helper.dart';
-
 enum City { MAKAH, MADINA }
 
 class Chapter {
@@ -32,7 +29,6 @@ class Chapter {
 
   static City getCity(int isMaki) {
     if (isMaki == 1) return City.MAKAH;
-
     return City.MADINA;
   }
 

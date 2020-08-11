@@ -1,7 +1,6 @@
+import 'package:audioplayerdb/Helpers/json_helper.dart';
 import 'package:audioplayerdb/Models/chapter.dart';
 import 'package:audioplayerdb/Models/verse.dart';
-import 'package:audioplayerdb/database_helper.dart';
-import 'package:audioplayerdb/json_helper.dart';
 
 enum DatabaseType { SQL_LITE, JSON }
 

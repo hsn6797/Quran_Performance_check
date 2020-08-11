@@ -1,4 +1,4 @@
-import '../database_helper.dart';
+import 'package:audioplayerdb/Utills/functions.dart';
 
 class Verse {
   int ind;
@@ -44,10 +44,10 @@ class Verse {
         verse_no: json['verse_no'],
         arabic_text: json['arabic_text'],
         urdu_text: json['urdu_text'],
-        arabic_start_time: parseDuration(json['arabic_start_time']),
-        arabic_end_time: parseDuration(json['arabic_end_time']),
-        urdu_start_time: parseDuration(json['urdu_start_time']),
-        urdu_end_time: parseDuration(json['urdu_end_time']),
+        arabic_start_time: Functions.parseDuration(json['arabic_start_time']),
+        arabic_end_time: Functions.parseDuration(json['arabic_end_time']),
+        urdu_start_time: Functions.parseDuration(json['urdu_start_time']),
+        urdu_end_time: Functions.parseDuration(json['urdu_end_time']),
       );
 
   static Future<List<Verse>> toObjectList(var maps) async {
@@ -83,20 +83,4 @@ class Verse {
 //      return v;
 //    });
 //  }
-
-  static Duration parseDuration(String s) {
-    if (s == null || s.isEmpty) return null;
-    int hours = 0;
-    int minutes = 0;
-    int micros;
-    List<String> parts = s.split(':');
-    if (parts.length > 2) {
-      hours = int.parse(parts[parts.length - 3]);
-    }
-    if (parts.length > 1) {
-      minutes = int.parse(parts[parts.length - 2]);
-    }
-    micros = (double.parse(parts[parts.length - 1]) * 1000000).round();
-    return Duration(hours: hours, minutes: minutes, microseconds: micros);
-  }
 }

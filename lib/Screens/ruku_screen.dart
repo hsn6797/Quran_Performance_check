@@ -34,16 +34,16 @@ class _RukuScreenState extends State<RukuScreen> with WidgetsBindingObserver {
               return ListTile(
                 onTap: () async {
                   // go to verses screen
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => VerseListScreen(
-                        chapter_no: widget.chapter.ind,
-                        ruku: ruku,
-                        title: '${widget.chapter.english_name} Ruku ${ind + 1}',
-                      ),
-                    ),
-                  );
+//                  Navigator.push(
+//                    context,
+//                    MaterialPageRoute(
+//                      builder: (context) => VerseListScreen(
+//                        chapter_no: widget.chapter.ind,
+//                        rukus: ruku,
+//                        title: '${widget.chapter.english_name} Ruku ${ind + 1}',
+//                      ),
+//                    ),
+//                  );
                 },
                 title: Padding(
                   padding: const EdgeInsets.all(5.0),
