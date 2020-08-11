@@ -33,7 +33,8 @@ class Functions {
     return Duration(hours: hours, minutes: minutes, microseconds: micros);
   }
 
-  static String replaceCharacter(String str, String replaceChar, String withChar) {
+  static String replaceCharacter(
+      String str, String replaceChar, String withChar) {
     if (str.isEmpty) return null;
     String resultString = str;
     if (str.contains(replaceChar)) {
