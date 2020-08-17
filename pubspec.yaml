@@ -41,6 +41,11 @@ dependencies:
   permission_handler: ^5.0.1
   intl: ^0.15.1
   shared_preferences: ^0.5.8
+  threading: ^0.0.10
+
+#  background_fetch: ^0.5.1
+  responsive_widgets: ^2.0.1
+
 
 #  connectivity: ^0.4.2
 

@@ -1,7 +1,11 @@
+import 'dart:async';
+
 import 'package:audioplayerdb/Screens/chapter_list_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 

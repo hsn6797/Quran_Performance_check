@@ -25,7 +25,7 @@ class MainNotifier extends ChangeNotifier {
     notifyListeners();
   }
 
-  Translation _translation = Translation.Urdu_Arabic;
+  Translation _translation = Translation.Arabic_Urdu;
   Translation get translation => _translation;
   set translation(Translation translation) {
     _translation = translation;

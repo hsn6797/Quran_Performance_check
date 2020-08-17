@@ -44,7 +44,7 @@ class ListviewTile extends StatelessWidget {
         ),
       ),
       subtitle: Provider.of<MainNotifier>(context).translation ==
-              Translation.Urdu_Arabic
+              Translation.Arabic_Urdu
           ? Padding(
               padding: const EdgeInsets.only(
                   left: 14, right: 20, top: 8, bottom: 20),

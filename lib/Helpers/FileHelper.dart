@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:audioplayerdb/constants.dart';
 import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart' as pathProvider;
 import 'package:http/http.dart' as http;
@@ -45,6 +46,31 @@ class FileHelper {
     } catch (err) {
       print('Download failed {Error Message}-> ${err.toString()}');
       return false;
+    }
+  }
+
+  /// Return true if audio file already exists in storage
+  /// or successfully downloaded
+  /// otherwise returns false;
+  Future<bool> downloadFileFromInternet({String fileName = ''}) async {
+    var downloadsDir = await getApplicationDownloadsDirectory();
+    File audioFile = File(
+      path.join(
+        downloadsDir.path,
+        fileName,
+      ),
+    );
+
+    if (await audioFile.exists()) {
+      return true;
+    } else {
+      print('Download URL: -> ${AudioFilesURL + fileName}');
+      if (!await download(
+          url: Uri.parse(AudioFilesURL + fileName),
+          destinationFile: audioFile)) {
+        return false;
+      }
+      return true;
     }
   }
 

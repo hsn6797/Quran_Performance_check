@@ -20,6 +20,7 @@ class MyPlayer {
   Future<void> prepareAudioSource(String fileName) async {
     try {
       // if file not exists in storage.
+//      Uri path = await getAudioUri(fileName: fileName);
       Uri path = await downloadFileFromInternet(fileName: fileName);
       print('Audio File Path To Play: -> {$path}');
       AudioSource source = AudioSource.uri(path);
@@ -62,9 +63,10 @@ class MyPlayer {
       ),
     );
 
-    if (await audioFile.exists())
+    if (await audioFile.exists()) {
+      fh = null;
       return Uri.file(audioFile.path);
-    else {
+    } else {
       Uri url = Uri.parse(AudioFilesURL + fileName);
       print('Download URL: -> {$url}');
       if (await fh.download(url: url, destinationFile: audioFile)) {
@@ -72,6 +74,26 @@ class MyPlayer {
       }
       fh = null;
       return url;
+    }
+  }
+
+  /// Return local audio file path Uri if exists
+  /// otherwise returns audio file URL path Uri
+  Future<Uri> getAudioUri({String fileName = ''}) async {
+    FileHelper fh = FileHelper();
+    var downloadsDir = await fh.getApplicationDownloadsDirectory();
+    File audioFile = File(
+      join(
+        downloadsDir.path,
+        fileName,
+      ),
+    );
+    fh = null;
+
+    if (await audioFile.exists()) {
+      return Uri.file(audioFile.path);
+    } else {
+      return Uri.parse(AudioFilesURL + fileName);
     }
   }
 
