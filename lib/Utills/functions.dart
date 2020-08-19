@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class Functions {
   // Go to next screen
@@ -31,6 +32,14 @@ class Functions {
     }
     micros = (double.parse(parts[parts.length - 1]) * 1000000).round();
     return Duration(hours: hours, minutes: minutes, microseconds: micros);
+  }
+
+  static Future<bool> requestStoragePermission() async {
+    var status = await Permission.storage.request();
+    if (status.isGranted) {
+      return true;
+    }
+    return false;
   }
 
   static String replaceCharacter(
