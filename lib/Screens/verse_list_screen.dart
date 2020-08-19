@@ -12,7 +12,6 @@ import 'package:flutter/scheduler.dart';
 import 'dart:async';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-
 const TAG = 'Verse List Screen: ';
 
 enum Translation { Arabic, Urdu, Arabic_Urdu }
