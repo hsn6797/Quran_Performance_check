@@ -4,6 +4,7 @@ import 'package:audioplayerdb/Helpers/quran_helper.dart';
 import 'package:audioplayerdb/Models/verse.dart';
 import 'package:audioplayerdb/Screens/verse_list_screen.dart';
 import 'package:audioplayerdb/Utills/functions.dart';
+import 'package:audioplayerdb/constants.dart';
 import 'package:flutter/foundation.dart';
 
 class MainNotifier extends ChangeNotifier {
@@ -25,9 +26,9 @@ class MainNotifier extends ChangeNotifier {
     notifyListeners();
   }
 
-  Translation _translation = Translation.Arabic_Urdu;
-  Translation get translation => _translation;
-  set translation(Translation translation) {
+  QuranScript _translation = QuranScript.Arabic_Urdu;
+  QuranScript get translation => _translation;
+  set translation(QuranScript translation) {
     _translation = translation;
     // Notify changes
     notifyListeners();

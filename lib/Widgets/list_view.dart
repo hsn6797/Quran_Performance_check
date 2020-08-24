@@ -1,34 +1,49 @@
 import 'package:audioplayerdb/Models/verse.dart';
-import 'package:audioplayerdb/Notifiers/main_notifier.dart';
-import 'package:audioplayerdb/Widgets/list_tile.dart';
+import 'package:audioplayerdb/Widgets/verse_tile.dart';
+import 'package:audioplayerdb/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class Listview extends StatelessWidget {
-  final Function onPress;
-  final Function onLongPress;
-  final ScrollController controller;
-  Listview({this.onPress, this.onLongPress, this.controller});
+  final Function onTap;
+  final Function onDoubleTap;
+  final ItemScrollController itemScrollController;
+  final currentSelectedVerse;
+  final List<Verse> verseList;
+  final QuranScript quranScript;
+
+  Listview(List<Verse> verseList,
+      {int currentSelectedVerse,
+      QuranScript quranScript,
+      this.onTap,
+      this.onDoubleTap,
+      this.itemScrollController})
+      : this.verseList = verseList,
+        this.quranScript = quranScript,
+        this.currentSelectedVerse = currentSelectedVerse;
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<MainNotifier>(
-      builder: (context, mainNotifier, child) {
-        return ListView.builder(
-          itemBuilder: (context, ind) {
-            Verse verse = mainNotifier.versesList[ind];
-            return ListviewTile(
-              title: verse.arabic_text,
-              subtitle: verse.urdu_text,
-              listPosition: ind,
-              pressCallback: onPress(ind),
-              longPressCallback: onLongPress,
-            );
-          },
-          itemCount: mainNotifier.versesCount,
-          controller: controller,
+    return ScrollablePositionedList.builder(
+      itemBuilder: (context, ind) {
+        Verse verse = verseList[ind];
+//          double width = MediaQuery.of(context).size.width;
+//          double height = MediaQuery.of(context).size.height;
+//          printMessage(width.toString() + ' - ' + height.toString());
+
+        return GestureDetector(
+          onTap: () async => onTap(ind),
+          onDoubleTap: onDoubleTap,
+          child: VerseTile(
+              verse: verse,
+              ind: ind,
+              currentSelectedVerse: currentSelectedVerse,
+              quranScript: quranScript),
         );
       },
+      itemCount: verseList.length,
+      itemScrollController: itemScrollController,
+//      itemPositionsListener: _itemPositionsListener,
     );
   }
 }

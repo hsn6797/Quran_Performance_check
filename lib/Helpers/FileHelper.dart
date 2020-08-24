@@ -5,6 +5,25 @@ import 'package:path_provider/path_provider.dart' as pathProvider;
 import 'package:http/http.dart' as http;
 
 class FileHelper {
+  // make this a singleton class
+  FileHelper._privateConstructor();
+  static final FileHelper instance = FileHelper._privateConstructor();
+
+  // only have a single app-wide reference to the database
+  static Directory _downloadsDir;
+
+  Future<Directory> get downloadsDir async {
+    if (_downloadsDir != null) return _downloadsDir;
+    // lazily instantiate the db the first time it is accessed
+    _downloadsDir = await _initFileHelper();
+    return _downloadsDir;
+  }
+
+  // this opens the database (and creates it if it doesn't exist)
+  _initFileHelper() async {
+    return await getApplicationDownloadsDirectory();
+  }
+
   /// On iOS its return getApplicationSupportDirectory
   /// its may be like: /Volumes/User/me/Library/Application Support
   ///
@@ -64,9 +83,9 @@ class FileHelper {
     if (await audioFile.exists()) {
       return true;
     } else {
-      print('Download URL: -> ${AudioFilesURL + fileName}');
+      print('Download URL: -> ${Constant.AudioFilesURL + fileName}');
       if (!await download(
-          url: Uri.parse(AudioFilesURL + fileName),
+          url: Uri.parse(Constant.AudioFilesURL + fileName),
           destinationFile: audioFile)) {
         return false;
       }
@@ -86,9 +105,30 @@ class FileHelper {
       await fa.close();
       return true;
     } catch (err) {
-      print('Download failed {Error Message}-> ${err.toString()}');
+      print('Download failed {Error Message}-> ${err.toStringValue()}');
       return false;
     }
+  }
+
+  Future<bool> downloadAudioFile(String fileName, File audioFilePath) async {
+    if (!await audioFilePath.exists()) {
+      print('Download URL: -> ${Constant.AudioFilesURL + fileName}');
+      if (!await download(
+          url: Uri.parse(Constant.AudioFilesURL + fileName),
+          destinationFile: audioFilePath)) {
+        return false;
+      }
+    }
+    return true;
+
+//    if (!await audioFile.exists()) {
+//    print('Download URL: -> $Constant.AudioFilesURL$fileName');
+//    print('File Path: -> ${audioFile.path}');
+//
+//    if (!await _download(
+//    url: Uri.parse(Constant.AudioFilesURL + config["fileName"].toString()),
+//    destinationFile: audioFile)) {}
+//    }
   }
 
 //  Future<bool> downloadAudioFile({Uri url, File destinationFile}) async {

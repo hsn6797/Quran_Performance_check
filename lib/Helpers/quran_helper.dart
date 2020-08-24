@@ -35,9 +35,8 @@ class QuranHelper {
   Future<List<Verse>> ChapterVersesList(
       {DatabaseType databaseType = DatabaseType.JSON, int chapter_no}) async {
     // load from Json
-    JsonHelper helper = instance.jh;
-    var jsonData = await helper.getAssetFileJson('Verses/$chapter_no.json');
-
+    var jsonData =
+        await instance.jh.getAssetFileJson('Verses/$chapter_no.json');
     return jsonData != null ? Verse.toObjectList(jsonData) : null;
   }
 }

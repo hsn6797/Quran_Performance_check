@@ -54,7 +54,7 @@ class MyPlayer {
   /// Return local audio file path Uri if exists
   /// otherwise returns audio file URL path Uri
   Future<Uri> downloadFileFromInternet({String fileName = ''}) async {
-    FileHelper fh = FileHelper();
+    FileHelper fh = FileHelper.instance;
     var downloadsDir = await fh.getApplicationDownloadsDirectory();
     File audioFile = File(
       join(
@@ -67,7 +67,7 @@ class MyPlayer {
       fh = null;
       return Uri.file(audioFile.path);
     } else {
-      Uri url = Uri.parse(AudioFilesURL + fileName);
+      Uri url = Uri.parse(Constant.AudioFilesURL + fileName);
       print('Download URL: -> {$url}');
       if (await fh.download(url: url, destinationFile: audioFile)) {
         url = Uri.file(audioFile.path);
@@ -80,7 +80,7 @@ class MyPlayer {
   /// Return local audio file path Uri if exists
   /// otherwise returns audio file URL path Uri
   Future<Uri> getAudioUri({String fileName = ''}) async {
-    FileHelper fh = FileHelper();
+    FileHelper fh = FileHelper.instance;
     var downloadsDir = await fh.getApplicationDownloadsDirectory();
     File audioFile = File(
       join(
@@ -93,7 +93,7 @@ class MyPlayer {
     if (await audioFile.exists()) {
       return Uri.file(audioFile.path);
     } else {
-      return Uri.parse(AudioFilesURL + fileName);
+      return Uri.parse(Constant.AudioFilesURL + fileName);
     }
   }
 
