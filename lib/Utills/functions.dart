@@ -52,6 +52,14 @@ class Functions {
     return resultString;
   }
 
+  static List<String> splitString(
+    String str,
+    String char,
+  ) {
+    if (str == null || str.isEmpty) return null;
+    return str.contains(char) ? str.split(char) : null;
+  }
+
   static void screenSize(BuildContext context) {
     // full screen width and height
     double width = MediaQuery.of(context).size.width;

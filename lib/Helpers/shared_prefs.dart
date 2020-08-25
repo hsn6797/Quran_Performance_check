@@ -6,6 +6,7 @@ class CustomSharedPreferences {
   /// Instantiation of the SharedPreferences library
   ///
   static const String _kQuranScript = "quran_script";
+  static const String _kBookmark = "bookmark";
 
   static SharedPreferences prefs;
 
@@ -28,6 +29,12 @@ class CustomSharedPreferences {
     }
   }
 
+  static Future<String> getBookmark() async {
+    await _getInstance();
+    if (isValueExists(key: _kBookmark))
+      return prefs.getString(_kBookmark) ?? null;
+  }
+
   static QuranScript toObjectValue(String value) {
     if (value == 'A+U') return QuranScript.Arabic_Urdu;
     if (value == 'A') return QuranScript.Arabic;
@@ -46,6 +53,11 @@ class CustomSharedPreferences {
   static Future<bool> setQuranScript(QuranScript value) async {
     await _getInstance();
     return prefs.setString(_kQuranScript, toStringValue(value));
+  }
+
+  static Future<bool> setBookmark(int chapterNo, int verseNo) async {
+    await _getInstance();
+    return await prefs.setString(_kBookmark, '$chapterNo|$verseNo');
   }
 
   static Future<bool> removeValue({String key}) async {

@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:isolate';
 import 'dart:ui';
+import 'package:audioplayerdb/Widgets/verse_tile.dart';
 import 'package:path/path.dart';
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
@@ -37,7 +38,7 @@ class VerseListScreen extends StatefulWidget {
 class _VerseListScreenState extends State<VerseListScreen>
     with WidgetsBindingObserver /*,SingleTickerProviderStateMixin*/ {
   MyPlayer _mp;
-  List<Verse> _versesList = [];
+  List<Verse> _versesList = <Verse>[];
 
   ItemScrollController _itemScrollController;
 //  ItemPositionsListener _itemPositionsListener;
@@ -58,6 +59,7 @@ class _VerseListScreenState extends State<VerseListScreen>
   Icon _iconPlay;
   bool _progressBarActive;
   bool _isDownloading;
+  bool _doubleTapfirstTime;
 
   static Directory _downloadsDir;
 
@@ -67,28 +69,25 @@ class _VerseListScreenState extends State<VerseListScreen>
   /* ------------------ User Defined Methods ------------------ */
 
   void init() async {
-    // - Initialize objects
+    // ---- Initialize objects
     _mp = MyPlayer();
-
     _itemScrollController = ItemScrollController();
 //    _itemPositionsListener = ItemPositionsListener.create();
-
     _isplaying = false;
-    _currentSelectedVerse = -1;
     _currentRukuNo = 0;
     _iconPlay = Icon(Icons.play_arrow);
 
     _progressBarActive = false;
     _isDownloading = false;
+    _currentSelectedVerse = -1;
+    _doubleTapfirstTime = true;
 
     // - Load verses list
     await _loadVerses();
-
-    // - Get the download directory in App Storage
-    _downloadsDir = await FileHelper.instance.downloadsDir;
-
     // - Get the Script Value from Shared Preferences
     _quranScript = await CustomSharedPreferences.getQuranScript();
+    // - Get the download directory in App Storage
+    _downloadsDir = await FileHelper.instance.downloadsDir;
 
     // 2- Initialize Streams and Listeners
     _mp.player.playerStateStream.listen((playerState) async {
@@ -98,12 +97,11 @@ class _VerseListScreenState extends State<VerseListScreen>
       if (_isplaying && processingState == ProcessingState.completed) {
         if (_mp != null) {
           setState(() => _currentSelectedVerse += 1);
-
           // Play next verse while _currentSelectedVerse is in the range of verse List.
           if (_currentSelectedVerse > -1 &&
               _currentSelectedVerse < _versesList.length) {
             // Check and change the rukuNo if needed and play
-            await _loadRukuAudio(play: true);
+            await _letsGo(play: true);
 
 //            // - Scroll to next verse
 //            jumptoCurrentVerse();
@@ -131,14 +129,18 @@ class _VerseListScreenState extends State<VerseListScreen>
 //    animationController.forward();
 
     // - Load the first ruku audio
-    await _loadRukuAudio();
+
+    await _letsGo();
+
+    // get current verse from shared prefrences
+    await getCurrentVerseFromSP();
   }
 
   void _releaseResources() async {
     if (_mp != null) _mp.releasePlayer();
     _mp = null;
 
-    if (_versesList != null && _versesList.length > 0) _versesList.clear();
+    if (_versesList != null && _versesList.length >= 0) _versesList.clear();
     _versesList = null;
 
     _iconPlay = null;
@@ -146,6 +148,9 @@ class _VerseListScreenState extends State<VerseListScreen>
 //    _itemPositionsListener = null;
     _downloadsDir = null;
 //    animationController.dispose();
+
+    CustomSharedPreferences.setBookmark(
+        widget.chapter_no, _currentSelectedVerse);
   }
 
   Future<void> _loadVerses() async {
@@ -167,27 +172,27 @@ class _VerseListScreenState extends State<VerseListScreen>
     await _mp.prepareAudioSource(widget.rukus[_currentRukuNo].file_name);
   }
 
-  Future<void> _loadRukuAudio(
-      {bool play = false, bool changedScript = false}) async {
-    if (_isplaying) _mp.pauseAudio();
-
+  Future<void> _letsGo({bool play = false, bool changedScript = false}) async {
     // - Select currently playing ruku
     var ruku = widget.rukus[_currentRukuNo];
 
     // - Check if the selected verse is not in the current ruku
     if ((_currentSelectedVerse + 1) < ruku.first_verse ||
         (_currentSelectedVerse + 1) > ruku.last_verse) {
-      // - Change ruku Nunber
+      // - Change ruku number
+      printMessage(
+          'changing ruku {${_currentRukuNo + 1}} to ruku {${_currentRukuNo + 2}} ...');
       _changeCurrentRukuNo();
 
       setState(() => _isDownloading = true);
-
       // - Load new ruku AudioSource
+      printMessage('setting up ruku {${_currentRukuNo + 1}} audio source...');
       await _setAudioPlayer();
-
       setState(() => _isDownloading = false);
 
       // - Start downloading next ruku audio file
+      printMessage(
+          'Ruku {${_currentRukuNo + 2}} audio downloading in background...');
       _startDownloadIsolate();
     }
 
@@ -196,6 +201,8 @@ class _VerseListScreenState extends State<VerseListScreen>
 
     if (play) {
       // Play the Verse
+      printMessage(
+          'Playing ruku {${_currentRukuNo + 1}} verse {${_currentSelectedVerse + 1}} ...');
       await _playVerse(
         _versesList[_currentSelectedVerse],
         continues: false,
@@ -289,7 +296,7 @@ class _VerseListScreenState extends State<VerseListScreen>
           'downloadsDir': _downloadsDir.path,
         });
       } else {
-        print('[isolateToMainStream] $data');
+        print('--------------- [isolateToMainStream] -> $data ---------------');
         if (data == 'Done') {
           isolateToMainStream.close();
           _isolate.kill(priority: Isolate.immediate);
@@ -301,9 +308,25 @@ class _VerseListScreenState extends State<VerseListScreen>
     });
   }
 
-  void printMessage(String msg) => print(TAG + msg);
-  /* ------------------ Methods use in Build Method ------------------ */
+  Future getCurrentVerseFromSP() async {
+    String value = await CustomSharedPreferences.getBookmark();
+    List<String> lis = Functions.splitString(value, "|");
+    if (lis != null) {
+      int chapter = int.parse(lis[0]);
+      int verse = int.parse(lis[1]);
+      if (chapter == widget.chapter_no) {
+        _currentSelectedVerse = verse;
+        // Jump to current verse index
+        jumptoCurrentVerse();
+        return;
+      }
+    }
+    _currentSelectedVerse = -1;
+  }
 
+  void printMessage(String msg) => print(TAG + msg);
+
+  /* ------------------ Methods use in Build Method ------------------ */
   Future tapOnTile(int ind) async {
     if (_progressBarActive || _isDownloading) return;
     setState(() {
@@ -312,12 +335,12 @@ class _VerseListScreenState extends State<VerseListScreen>
     });
 
     // Check and change the ruku if needed and play
-    await _loadRukuAudio(play: true);
+
+    await _letsGo(play: true);
   }
 
   Future doubleTapOnTile() async {
     if (_mp == null || _progressBarActive || _isDownloading) return;
-    printMessage(_isplaying.toString());
 //    _isplaying ? animationController.repeat() : animationController.reset();
 
     if (_isplaying) {
@@ -328,9 +351,14 @@ class _VerseListScreenState extends State<VerseListScreen>
       // Check and change the ruku if needed and play
       if (_currentSelectedVerse == -1) {
         setState(() => _currentSelectedVerse = 0);
-        await _loadRukuAudio(play: true);
+        await _letsGo(play: true);
       } else {
-        await _mp.playAudio();
+        if (_doubleTapfirstTime) {
+          await _letsGo(play: true);
+          _doubleTapfirstTime = false;
+        } else {
+          await _mp.playAudio();
+        }
       }
     }
   }
@@ -340,9 +368,6 @@ class _VerseListScreenState extends State<VerseListScreen>
         ? QuranScript.Arabic
         : QuranScript.Arabic_Urdu);
 
-//    // jump to _current verse
-//    jumptoCurrentVerse();
-
     // - Save value to Cache
     CustomSharedPreferences.setQuranScript(_quranScript);
 
@@ -350,7 +375,7 @@ class _VerseListScreenState extends State<VerseListScreen>
 
     // - Play the verse
     if (_currentSelectedVerse > -1)
-      await _loadRukuAudio(play: true, changedScript: true);
+      await _letsGo(play: true, changedScript: true);
 
     // Jump to current verse index
     jumptoCurrentVerse();
@@ -420,40 +445,42 @@ class _VerseListScreenState extends State<VerseListScreen>
       ),
       body: Stack(
         children: <Widget>[
-          Listview(
-            _versesList,
-            currentSelectedVerse: _currentSelectedVerse,
-            quranScript: _quranScript,
-            itemScrollController: _itemScrollController,
-            onTap: tapOnTile,
-            onDoubleTap: doubleTapOnTile,
-          ),
-//          ScrollablePositionedList.builder(
-//            itemBuilder: (context, ind) {
-//              Verse verse = _versesList[ind];
-////              double width = MediaQuery.of(context).size.width;
-////              double height = MediaQuery.of(context).size.height;
-////              printMessage(width.toString() + ' - ' + height.toString());
-//              return GestureDetector(
-//                onTap: () async {
-//                  if (_progressBarActive || _isDownloading) return;
-//                  await tapOnTile(ind);
-//                },
-//                onDoubleTap: () async {
-//                  if (_progressBarActive || _isDownloading) return;
-//                  doubleTapOnTile();
-//                },
-//                child: VerseTile(
-//                    verse: verse,
-//                    ind: ind,
-//                    currentSelectedVerse: _currentSelectedVerse,
-//                    quranScript: _quranScript),
-//              );
-//            },
-//            itemCount: _versesList.length,
+//          Listview(
+//            _versesList,
+//            currentSelectedVerse: _currentSelectedVerse,
+//            quranScript: _quranScript,
 //            itemScrollController: _itemScrollController,
-//            itemPositionsListener: _itemPositionsListener,
+//            onTap: tapOnTile,
+//            onDoubleTap: doubleTapOnTile,
 //          ),
+          ScrollablePositionedList.builder(
+            itemBuilder: (context, ind) {
+              Verse verse = _versesList[ind];
+//              double width = MediaQuery.of(context).size.width;
+//              double height = MediaQuery.of(context).size.height;
+//              printMessage(width.toString() + ' - ' + height.toString());
+              return GestureDetector(
+                onTap: () async {
+                  if (_progressBarActive || _isDownloading) return;
+                  await tapOnTile(ind);
+                },
+                onDoubleTap: () async {
+                  if (_progressBarActive || _isDownloading) return;
+                  doubleTapOnTile();
+                },
+                child: VerseTile(
+                    verse: verse,
+                    ind: ind,
+                    currentSelectedVerse: _currentSelectedVerse,
+                    quranScript: _quranScript),
+              );
+            },
+            itemCount: _versesList.length,
+            itemScrollController: _itemScrollController,
+//            initialScrollIndex:
+//                _currentSelectedVerse <= -1 ? 0 : _currentSelectedVerse,
+//            itemPositionsListener: _itemPositionsListener,
+          ),
 //          Center(
 //            child: !_isplaying
 //                ? Icon(
@@ -485,6 +512,7 @@ class _VerseListScreenState extends State<VerseListScreen>
     super.dispose();
     WidgetsBinding.instance.removeObserver(this);
     printMessage('Dispose Called!!');
+
     // Release all resources
     _releaseResources();
   }
@@ -502,6 +530,7 @@ class _VerseListScreenState extends State<VerseListScreen>
     } else if (state == AppLifecycleState.paused) {
       // user is about quit our app temporally
 //      releaseResources();
+
       printMessage('App Paused');
     }
   }

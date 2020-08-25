@@ -1,4 +1,6 @@
 //  String URL =
+import 'package:audioplayerdb/Models/chapter.dart';
+
 ////      'http://192.168.10.6:8888/PHP_Scripts/01.mp3';
 ////      'http://download.quranurdu.com/Al%20Quran%20with%20Urdu%20Translation%20By%20Mishari%20Bin%20Rashid%20Al%20Afasi/1%20Al%20Fatiha.mp3';
 ////      'http://quranapp.masstechnologist.com/01.mp3';
@@ -16,4 +18,6 @@ class Constant {
   static const List<String> OPTIONS = <String>[
     SCRIPT,
   ];
+
+  static List<Chapter> CHAPTER_LIST;
 }

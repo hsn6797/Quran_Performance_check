@@ -1,7 +1,9 @@
+import 'package:audioplayerdb/Helpers/shared_prefs.dart';
 import 'package:audioplayerdb/Models/chapter.dart';
 import 'package:audioplayerdb/Helpers/quran_helper.dart';
 import 'package:audioplayerdb/Screens/verse_list_screen.dart';
 import 'package:audioplayerdb/Utills/functions.dart';
+import 'package:audioplayerdb/constants.dart';
 import 'package:flutter/material.dart';
 
 class ChapterListScreen extends StatefulWidget {
@@ -12,8 +14,11 @@ class ChapterListScreen extends StatefulWidget {
 class _ChapterListScreenState extends State<ChapterListScreen>
     with WidgetsBindingObserver {
   List<Chapter> _chaptersList = [];
-  QuranHelper _qh;
   bool _progressBarActive = false;
+  ScrollController _scrollController;
+  int chapNo;
+
+  static double tileHeight = 140.0;
 
   /* ------------------ Screen Lifecycle Methods ------------------ */
   @override
@@ -33,27 +38,26 @@ class _ChapterListScreenState extends State<ChapterListScreen>
             ListView.builder(
               itemBuilder: (context, ind) {
                 final chapter = _chaptersList[ind];
-                return ListTile(
-                  onTap: () {
-                    if (_progressBarActive) return;
-                    // Go to verses list screen
-                    Functions.changeScreen(
-                      context,
-                      screen: VerseListScreen(
-                        chapter_no: chapter.ind,
-                        rukus: chapter.ruku_mapping,
-                        title: '${chapter.english_name}',
-                      ),
-                    );
-                  },
-                  title: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            top: 0, bottom: 0, left: 4, right: 4),
-                        child: Text(
+                return Container(
+                  height: 120,
+                  child: ListTile(
+                    onTap: () {
+                      if (_progressBarActive) return;
+                      // Go to verses list screen
+                      Functions.changeScreen(
+                        context,
+                        screen: VerseListScreen(
+                          chapter_no: chapter.ind,
+                          rukus: chapter.ruku_mapping,
+                          title: '${chapter.english_name}',
+                        ),
+                      );
+                    },
+                    title: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
                           '(${chapter.ind})  ${chapter.english_name}',
                           textDirection: TextDirection.ltr,
                           textAlign: TextAlign.start,
@@ -64,11 +68,7 @@ class _ChapterListScreenState extends State<ChapterListScreen>
                             color: Colors.blueGrey.shade900,
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            top: 0, bottom: 0, left: 4, right: 4),
-                        child: Text(
+                        Text(
                           '(${chapter.ind})     ${chapter.name}',
                           textDirection: TextDirection.rtl,
                           textAlign: TextAlign.end,
@@ -82,40 +82,55 @@ class _ChapterListScreenState extends State<ChapterListScreen>
                             color: Colors.blueGrey.shade900,
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                  subtitle: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            top: 2, bottom: 0, left: 4, right: 4),
-                        child: Text(
-                          'Total Aayas ${chapter.total_verses}',
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            color: Colors.grey.shade900,
-                          ),
+                      ],
+                    ),
+                    subtitle: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 2, bottom: 0, left: 4, right: 0),
+                              child: Text(
+                                'Total Aayas ${chapter.total_verses}',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  color: Colors.grey.shade900,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 2, bottom: 0, left: 4, right: 0),
+                              child: Text(
+                                'Total Rukus ${chapter.ruku_mapping.length}',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  color: Colors.grey.shade900,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            top: 2, bottom: 0, left: 4, right: 4),
-                        child: Text(
-                          'Total Rukus ${chapter.ruku_mapping.length}',
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            color: Colors.grey.shade900,
-                          ),
+                        Icon(
+                          Icons.bookmark,
+                          color: chapNo != null && chapter.ind == chapNo
+                              ? Colors.red
+                              : Colors.transparent,
+                          size: 30,
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 );
               },
+              controller: _scrollController,
               itemCount: _chaptersList.length,
             ),
             _progressBarActive == true
@@ -148,50 +163,58 @@ class _ChapterListScreenState extends State<ChapterListScreen>
   }
 
   @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
+  void didChangeAppLifecycleState(AppLifecycleState state) async {
     if (state == AppLifecycleState.resumed) {
       // user returned to our app
 //      this.init();
-      print('App Resumed');
     } else if (state == AppLifecycleState.inactive) {
       // app is inactive
 //      releaseResources();
-
       print('App Inactive');
     } else if (state == AppLifecycleState.paused) {
       // user is about quit our app temporally
 //      releaseResources();
-
       print('App Paused');
     }
   }
 
 /* ------------------ User Defined Methods ------------------ */
   void init() async {
+    // initialize Objects
+    _scrollController = ScrollController();
+
     // Load all chapters list
     await _loadChapters();
+    await getCurrentVerseFromSP();
+  }
+
+  Future getCurrentVerseFromSP() async {
+    String value = await CustomSharedPreferences.getBookmark();
+    List<String> lis = Functions.splitString(value, "|");
+    if (lis != null) {
+      int chapter = int.parse(lis[0]);
+//      _scrollController.jumpTo(chapter * tileHeight);
+      chapNo = chapter;
+    }
   }
 
   Future<void> _loadChapters() async {
-    _qh = QuranHelper.instance;
-
     setState(() => _progressBarActive = true);
     var dateS = DateTime.now();
 
     //fetch list from JSON File
-    _chaptersList = await _qh.ChaptersList();
-
+    _chaptersList = await QuranHelper.instance.ChaptersList();
+//    _chaptersList = Constant.CHAPTER_LIST;
     var dateE = DateTime.now();
     setState(() => _progressBarActive = false);
 
     Functions.printLoadingTime(dateStart: dateS, dateEnd: dateE);
-
-    _qh = null;
   }
 
   void _releaseResources() {
-    if (_chaptersList != null && _chaptersList.length == 0)
+    if (_chaptersList != null && _chaptersList.length >= 0) {
       _chaptersList.clear();
-    _qh = null;
+      _chaptersList = null;
+    }
   }
 }

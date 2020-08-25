@@ -1,11 +1,14 @@
 import 'dart:async';
 
+import 'package:audioplayerdb/Helpers/quran_helper.dart';
 import 'package:audioplayerdb/Screens/chapter_list_screen.dart';
+import 'package:audioplayerdb/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+//  await _loadChapters();
   runApp(MyApp());
 }
 
@@ -22,4 +25,9 @@ class MyApp extends StatelessWidget {
       home: ChapterListScreen(),
     );
   }
+}
+
+Future _loadChapters() async {
+  //fetch list from JSON File
+  Constant.CHAPTER_LIST = await QuranHelper.instance.ChaptersList();
 }
