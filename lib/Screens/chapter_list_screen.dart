@@ -13,12 +13,12 @@ class ChapterListScreen extends StatefulWidget {
 
 class _ChapterListScreenState extends State<ChapterListScreen>
     with WidgetsBindingObserver {
-  List<Chapter> _chaptersList = [];
+  List<Chapter> _chaptersList;
   bool _progressBarActive = false;
   ScrollController _scrollController;
   int chapNo;
 
-  static double tileHeight = 140.0;
+  static double tileHeight = 120.0;
 
   /* ------------------ Screen Lifecycle Methods ------------------ */
   @override
@@ -39,12 +39,12 @@ class _ChapterListScreenState extends State<ChapterListScreen>
               itemBuilder: (context, ind) {
                 final chapter = _chaptersList[ind];
                 return Container(
-                  height: 120,
+                  height: tileHeight,
                   child: ListTile(
-                    onTap: () {
+                    onTap: () async {
                       if (_progressBarActive) return;
                       // Go to verses list screen
-                      Functions.changeScreen(
+                      await Functions.changeScreen(
                         context,
                         screen: VerseListScreen(
                           chapter_no: chapter.ind,
@@ -164,18 +164,23 @@ class _ChapterListScreenState extends State<ChapterListScreen>
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) async {
-    if (state == AppLifecycleState.resumed) {
-      // user returned to our app
+    print('-------------------------  $state  ---------------------------');
+//    if (state == AppLifecycleState.resumed) {
+//      // user returned to our app
 //      this.init();
-    } else if (state == AppLifecycleState.inactive) {
-      // app is inactive
-//      releaseResources();
-      print('App Inactive');
-    } else if (state == AppLifecycleState.paused) {
-      // user is about quit our app temporally
-//      releaseResources();
-      print('App Paused');
-    }
+//      print('App Resumed');
+//    } else if (state == AppLifecycleState.inactive) {
+//      // app is inactive
+//      print('App Inactive');
+//    } else if (state == AppLifecycleState.detached) {
+//      // user is about quit our app temporally
+////      _releaseResources();
+//      print('App Detached');
+//    } else if (state == AppLifecycleState.paused) {
+//      // user is about quit our app temporally
+//      _releaseResources();
+//      print('App Paused');
+//    }
   }
 
 /* ------------------ User Defined Methods ------------------ */
@@ -194,7 +199,9 @@ class _ChapterListScreenState extends State<ChapterListScreen>
     if (lis != null) {
       int chapter = int.parse(lis[0]);
 //      _scrollController.jumpTo(chapter * tileHeight);
-      chapNo = chapter;
+      setState(() {
+        chapNo = chapter;
+      });
     }
   }
 
@@ -203,8 +210,11 @@ class _ChapterListScreenState extends State<ChapterListScreen>
     var dateS = DateTime.now();
 
     //fetch list from JSON File
-    _chaptersList = await QuranHelper.instance.ChaptersList();
-//    _chaptersList = Constant.CHAPTER_LIST;
+    if (Constant.CHAPTER_LIST != null && Constant.CHAPTER_LIST.length > 0)
+      _chaptersList = Constant.CHAPTER_LIST;
+    else
+      _chaptersList = await QuranHelper.instance.ChaptersList();
+
     var dateE = DateTime.now();
     setState(() => _progressBarActive = false);
 

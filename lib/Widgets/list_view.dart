@@ -44,43 +44,8 @@ class Listview extends StatelessWidget {
       },
       itemCount: verseList.length,
       itemScrollController: itemScrollController,
+      initialScrollIndex: currentSelectedVerse <= -1 ? 0 : currentSelectedVerse,
 //      itemPositionsListener: _itemPositionsListener,
     );
   }
 }
-
-//ListView(
-//children: <Widget>[
-//ListviewTile(
-//title: 'Google',
-//subtitle: 'hsn6797@gmail.com',
-//pressCallback: () {
-//// Show the bottom sheet to enter new tasks
-//showModalBottomSheet(
-//context: context,
-//isScrollControlled: true,
-//builder: (context) => SingleChildScrollView(
-//child: Container(
-//padding: EdgeInsets.only(
-//bottom: MediaQuery.of(context).viewInsets.bottom),
-//child: DisplayScreen(),
-//),
-//),
-//);
-//},
-//longPressCallback: null,
-//),
-//ListviewTile(
-//title: 'Hotmail',
-//subtitle: 'hsn6797@hotmail.com',
-//pressCallback: null,
-//longPressCallback: null,
-//),
-//ListviewTile(
-//title: 'Yahoo',
-//subtitle: 'hsn6797@yahoo.com',
-//pressCallback: null,
-//longPressCallback: null,
-//),
-//],
-//);

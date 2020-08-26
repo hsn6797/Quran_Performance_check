@@ -1,4 +1,6 @@
 //  String URL =
+import 'dart:io';
+
 import 'package:audioplayerdb/Models/chapter.dart';
 
 ////      'http://192.168.10.6:8888/PHP_Scripts/01.mp3';
@@ -20,4 +22,5 @@ class Constant {
   ];
 
   static List<Chapter> CHAPTER_LIST;
+  static Directory DOWNLOAD_DIR_PATH;
 }

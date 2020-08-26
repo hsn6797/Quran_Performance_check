@@ -3,8 +3,9 @@ import 'package:permission_handler/permission_handler.dart';
 
 class Functions {
   // Go to next screen
-  static void changeScreen(BuildContext context, {Widget screen}) {
-    Navigator.push(
+  static Future<void> changeScreen(BuildContext context,
+      {Widget screen}) async {
+    await Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => screen),
     );

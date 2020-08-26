@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:audioplayerdb/Helpers/FileHelper.dart';
 import 'package:audioplayerdb/Helpers/quran_helper.dart';
 import 'package:audioplayerdb/Screens/chapter_list_screen.dart';
 import 'package:audioplayerdb/constants.dart';
@@ -8,7 +9,9 @@ import 'package:flutter/services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-//  await _loadChapters();
+  await _loadChapters();
+  // - Get the download directory in App Storage
+  Constant.DOWNLOAD_DIR_PATH = await FileHelper.instance.downloadsDir;
   runApp(MyApp());
 }
 
