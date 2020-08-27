@@ -113,9 +113,11 @@ class FileHelper {
   Future<bool> downloadAudioFile(String fileName, File audioFilePath) async {
     if (!await audioFilePath.exists()) {
       print('Download URL: -> ${Constant.AudioFilesURL + fileName}');
-      if (!await download(
+      if (await download(
           url: Uri.parse(Constant.AudioFilesURL + fileName),
           destinationFile: audioFilePath)) {
+        return true;
+      } else {
         return false;
       }
     }
@@ -129,6 +131,15 @@ class FileHelper {
 //    url: Uri.parse(Constant.AudioFilesURL + config["fileName"].toString()),
 //    destinationFile: audioFile)) {}
 //    }
+  }
+
+  /// Return local audio file path Uri if exists
+  /// otherwise returns audio file URL path Uri
+  Future<Uri> getAudioFileUri(String fileName, File audioFile) async {
+    if (!await FileHelper.instance.downloadAudioFile(fileName, audioFile)) {
+      return Uri.parse(Constant.AudioFilesURL + fileName);
+    }
+    return Uri.file(audioFile.path);
   }
 
 //  Future<bool> downloadAudioFile({Uri url, File destinationFile}) async {

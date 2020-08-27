@@ -7,9 +7,14 @@ import 'package:audioplayerdb/constants.dart';
 
 const String TAG = '{ MyPlayer }: ';
 
+enum PlayerMode { local, online }
+
 class MyPlayer {
   AudioPlayer _player;
   AudioPlayer get player => _player;
+
+  PlayerMode _playingMode;
+  PlayerMode get playingMode => _playingMode;
 
   MyPlayer() {
     AudioPlayer.setIosCategory(IosCategory.playback);
@@ -17,13 +22,28 @@ class MyPlayer {
     _player.setLoopMode(LoopMode.off);
   }
 
-  Future<void> prepareAudioSource(String fileName) async {
+//  Future<void> prepareAudioSource(String fileName) async {
+//    try {
+//      // if file not exists in storage.
+////      Uri path = await getAudioUri(fileName: fileName);
+//      Uri path = await downloadFileFromInternet(fileName: fileName);
+//      print('Audio File Path To Play: -> {$path}');
+//      AudioSource source = AudioSource.uri(path);
+//      await _player.load(source);
+//    } catch (e) {
+//      // catch load errors: 404, invalid url ...
+//      print("An error occured $e");
+//    }
+//  }
+
+  Future<void> prepareAudioSource(Uri path) async {
     try {
       // if file not exists in storage.
 //      Uri path = await getAudioUri(fileName: fileName);
-      Uri path = await downloadFileFromInternet(fileName: fileName);
-      print('Audio File Path To Play: -> {$path}');
+
+      print('Audio File Path Returned: -> {$path}');
       AudioSource source = AudioSource.uri(path);
+
       await _player.load(source);
     } catch (e) {
       // catch load errors: 404, invalid url ...
@@ -51,51 +71,54 @@ class MyPlayer {
     return player.pause();
   }
 
-  /// Return local audio file path Uri if exists
-  /// otherwise returns audio file URL path Uri
-  Future<Uri> downloadFileFromInternet({String fileName = ''}) async {
-    FileHelper fh = FileHelper.instance;
-    var downloadsDir = await fh.getApplicationDownloadsDirectory();
-    File audioFile = File(
-      join(
-        downloadsDir.path,
-        fileName,
-      ),
-    );
-
-    if (await audioFile.exists()) {
-      fh = null;
-      return Uri.file(audioFile.path);
-    } else {
-      Uri url = Uri.parse(Constant.AudioFilesURL + fileName);
-      print('Download URL: -> {$url}');
-      if (await fh.download(url: url, destinationFile: audioFile)) {
-        url = Uri.file(audioFile.path);
-      }
-      fh = null;
-      return url;
-    }
-  }
-
-  /// Return local audio file path Uri if exists
-  /// otherwise returns audio file URL path Uri
-  Future<Uri> getAudioUri({String fileName = ''}) async {
-    FileHelper fh = FileHelper.instance;
-    var downloadsDir = await fh.getApplicationDownloadsDirectory();
-    File audioFile = File(
-      join(
-        downloadsDir.path,
-        fileName,
-      ),
-    );
-    fh = null;
-
-    if (await audioFile.exists()) {
-      return Uri.file(audioFile.path);
-    } else {
-      return Uri.parse(Constant.AudioFilesURL + fileName);
-    }
-  }
+//  /// Return local audio file path Uri if exists
+//  /// otherwise returns audio file URL path Uri
+//  Future<Uri> downloadFileFromInternet({String fileName = ''}) async {
+//    FileHelper fh = FileHelper.instance;
+//    var downloadsDir = await fh.getApplicationDownloadsDirectory();
+//    File audioFile = File(
+//      join(
+//        downloadsDir.path,
+//        fileName,
+//      ),
+//    );
+//
+//    if (await audioFile.exists()) {
+//      fh = null;
+//      _playingMode = PlayerMode.local;
+//      return Uri.file(audioFile.path);
+//    } else {
+//      Uri url = Uri.parse(Constant.AudioFilesURL + fileName);
+//      print('Download URL: -> {$url}');
+//      if (await fh.download(url: url, destinationFile: audioFile)) {
+//        _playingMode = PlayerMode.local;
+//        url = Uri.file(audioFile.path);
+//      }
+//      _playingMode = PlayerMode.online;
+//      fh = null;
+//      return url;
+//    }
+//  }
+//
+//  /// Return local audio file path Uri if exists
+//  /// otherwise returns audio file URL path Uri
+//  Future<Uri> getAudioUri({String fileName = ''}) async {
+//    FileHelper fh = FileHelper.instance;
+//    var downloadsDir = await fh.getApplicationDownloadsDirectory();
+//    File audioFile = File(
+//      join(
+//        downloadsDir.path,
+//        fileName,
+//      ),
+//    );
+//    fh = null;
+//
+//    if (await audioFile.exists()) {
+//      return Uri.file(audioFile.path);
+//    } else {
+//      return Uri.parse(Constant.AudioFilesURL + fileName);
+//    }
+//  }
 
   void releasePlayer() async => await player.dispose();
 }

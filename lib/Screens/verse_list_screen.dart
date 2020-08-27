@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:isolate';
 import 'dart:ui';
+
 import 'package:path/path.dart';
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
@@ -20,6 +21,8 @@ import 'package:audioplayerdb/Helpers/my_player.dart';
 
 import 'package:audioplayerdb/Models/verse.dart';
 import 'package:audioplayerdb/Models/chapter.dart';
+
+import 'package:connectivity/connectivity.dart';
 
 const TAG = 'Verse List Screen: ';
 
@@ -56,6 +59,11 @@ class _VerseListScreenState extends State<VerseListScreen>
   bool _isDownloading;
   bool _doubleTapfirstTime;
 
+//  String _connectionStatus = 'Unknown';
+//  final Connectivity _connectivity = Connectivity();
+//  StreamSubscription<ConnectivityResult> _connectivitySubscription;
+//  ConnectivityResult _connection;
+
 //  static Directory Constant.DOWNLOAD_DIR_PATH;
 
   /* ------------------ User Defined Methods ------------------ */
@@ -80,6 +88,23 @@ class _VerseListScreenState extends State<VerseListScreen>
     // - Get the Script Value from Shared Preferences
     _quranScript = await CustomSharedPreferences.getQuranScript();
     Constant.DOWNLOAD_DIR = await FileHelper.instance.downloadsDir;
+
+//    _connectivitySubscription =
+//        _connectivity.onConnectivityChanged.listen((result) {
+//      setState(() => _connection = result);
+//
+////          switch (result) {
+////        case ConnectivityResult.wifi:
+////          print("WIFI");
+////          break;
+////        case ConnectivityResult.mobile:
+////          print("MOBILE");
+////          break;
+////        case ConnectivityResult.none:
+////          print("NONE");
+////          break;
+////      }
+//    });
 
     // 2- Initialize Player and Streams/Listeners
     _mp = MyPlayer();
@@ -143,7 +168,17 @@ class _VerseListScreenState extends State<VerseListScreen>
   }
 
   Future<void> _setAudioPlayer() async {
-    await _mp.prepareAudioSource(_chapterAllRukus[_currentRukuNo].file_name);
+    File audioFile = File(
+      join(Constant.DOWNLOAD_DIR.path,
+          _chapterAllRukus[_currentRukuNo].file_name),
+    );
+    // Try to download file if not exists and return the path
+    Uri path = await FileHelper.instance
+        .getAudioFileUri(_chapterAllRukus[_currentRukuNo].file_name, audioFile);
+
+    await _mp.prepareAudioSource(path);
+
+//    await _mp.prepareAudioSource(_chapterAllRukus[_currentRukuNo].file_name);
   }
 
   Future<void> _letsGo({bool play = false, bool changedScript = false}) async {
@@ -303,6 +338,8 @@ class _VerseListScreenState extends State<VerseListScreen>
     if (_mp != null) _mp.releasePlayer();
     _mp = null;
 
+//    _connectivitySubscription.cancel();
+
     if (_versesList != null && _versesList.length >= 0) _versesList.clear();
     _versesList = null;
 
@@ -319,6 +356,7 @@ class _VerseListScreenState extends State<VerseListScreen>
   /* ------------------ Methods use in Build Method ------------------ */
   Future tapOnTile(int ind) async {
     if (_progressBarActive || _isDownloading) return;
+
     setState(() {
       _iconPlay = Icon(Icons.pause);
       _currentSelectedVerse = ind;
