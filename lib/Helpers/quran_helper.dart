@@ -1,6 +1,7 @@
 import 'package:audioplayerdb/Helpers/json_helper.dart';
 import 'package:audioplayerdb/Models/chapter.dart';
 import 'package:audioplayerdb/Models/verse.dart';
+import 'package:audioplayerdb/constants.dart';
 
 enum DatabaseType { SQL_LITE, JSON }
 
@@ -38,5 +39,24 @@ class QuranHelper {
     var jsonData =
         await instance.jh.getAssetFileJson('Verses/$chapter_no.json');
     return jsonData != null ? Verse.toObjectList(jsonData) : null;
+  }
+
+  Chapter GetChapterfromStaticList({int chapterNo = -1}) {
+    if (Constant.CHAPTER_LIST != null) {
+      try {
+        return Constant.CHAPTER_LIST.firstWhere((chapter) {
+          if (chapterNo != -1 && chapter.ind == chapterNo) {
+            return true;
+          } else
+            return false;
+        });
+      } catch (err) {
+        print(err.toString());
+        return null;
+      }
+    } else {
+      print("Chapters static list is empty");
+      return null;
+    }
   }
 }

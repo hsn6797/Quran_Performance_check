@@ -25,10 +25,13 @@ const TAG = 'Verse List Screen: ';
 
 class VerseListScreen extends StatefulWidget {
   final int chapter_no;
-  final String title;
-  final List<RukuMapping> rukus;
+//  final String title;
+//  final List<RukuMapping> rukus;
 
-  VerseListScreen({this.chapter_no, this.title, this.rukus});
+  VerseListScreen({this.chapter_no});
+
+//  final List<RukuMapping> rukus;
+//  VerseListScreen({this.chapter_no, this.title, this.rukus});
 
   @override
   _VerseListScreenState createState() => _VerseListScreenState();
@@ -36,12 +39,14 @@ class VerseListScreen extends StatefulWidget {
 
 class _VerseListScreenState extends State<VerseListScreen>
     with WidgetsBindingObserver /*,SingleTickerProviderStateMixin*/ {
-  MyPlayer _mp;
   List<Verse> _versesList = <Verse>[];
+  List<RukuMapping> _chapterAllRukus;
 
   ItemScrollController _itemScrollController;
 //  ItemPositionsListener _itemPositionsListener;
 
+  String _appBarTitle = '';
+  MyPlayer _mp;
   bool _isplaying;
   int _currentSelectedVerse;
   int _currentRukuNo;
@@ -51,13 +56,12 @@ class _VerseListScreenState extends State<VerseListScreen>
   bool _isDownloading;
   bool _doubleTapfirstTime;
 
-  static Directory _downloadsDir;
+//  static Directory Constant.DOWNLOAD_DIR_PATH;
 
   /* ------------------ User Defined Methods ------------------ */
 
   void init() async {
     // ---- Initialize objects
-    _mp = MyPlayer();
     _itemScrollController = ItemScrollController();
 //    _itemPositionsListener = ItemPositionsListener.create();
     _isplaying = false;
@@ -70,16 +74,15 @@ class _VerseListScreenState extends State<VerseListScreen>
     _doubleTapfirstTime = true;
 
     // - Load verses list
-    await _loadVerses();
+    bool loaded = await loadVersesTextData();
+    if (!loaded) return;
 
     // - Get the Script Value from Shared Preferences
     _quranScript = await CustomSharedPreferences.getQuranScript();
+    Constant.DOWNLOAD_DIR = await FileHelper.instance.downloadsDir;
 
-    // - Get the download directory in App Storage
-    _downloadsDir = Constant.DOWNLOAD_DIR_PATH;
-//    _downloadsDir = await FileHelper.instance.downloadsDir;
-
-    // 2- Initialize Streams and Listeners
+    // 2- Initialize Player and Streams/Listeners
+    _mp = MyPlayer();
     _mp.player.playerStateStream.listen((playerState) async {
       final processingState = playerState?.processingState;
       final playing = playerState?.playing;
@@ -96,52 +99,57 @@ class _VerseListScreenState extends State<VerseListScreen>
         }
       }
     });
-////    _itemPositionsListener.itemPositions.addListener(() {});
 
     // - Load the first ruku audio
     await _letsGo();
+
     // get current verse from shared Preferences
     await getCurrentVerseFromSP();
   }
 
-  void _releaseResources() async {
-    if (_mp != null) _mp.releasePlayer();
-    _mp = null;
-
-    if (_versesList != null && _versesList.length >= 0) _versesList.clear();
-    _versesList = null;
-
-    _iconPlay = null;
-    _itemScrollController = null;
-//    _itemPositionsListener = null;
-    _downloadsDir = null;
-    CustomSharedPreferences.setBookmark(
-        widget.chapter_no, _currentSelectedVerse);
-  }
-
-  Future<void> _loadVerses() async {
+  Future<bool> loadVersesTextData() async {
     // Define the QuranHandler Veriable
 
-    setState(() => _progressBarActive = true);
-    var dateS = DateTime.now();
-    // Fetch list from JSON File
-    _versesList = await QuranHelper.instance
-        .ChapterVersesList(chapter_no: widget.chapter_no);
-    var dateE = DateTime.now();
-    setState(() => _progressBarActive = false);
+    // - Load rukus list
+    if (_loadAllRukus()) {
+      setState(() => _progressBarActive = true);
+      var dateS = DateTime.now();
+      // Fetch list from JSON File
+      var vlist = await QuranHelper.instance
+          .ChapterVersesList(chapter_no: widget.chapter_no);
 
-    // Print the duration in which file loads in memory
-    Functions.printLoadingTime(dateStart: dateS, dateEnd: dateE);
+      if (vlist == null) {
+        setState(() => _progressBarActive = false);
+        return false;
+      }
+      _versesList = vlist;
+      var dateE = DateTime.now();
+      setState(() => _progressBarActive = false);
+
+      // Print the duration in which file loads in memory
+      Functions.printLoadingTime(dateStart: dateS, dateEnd: dateE);
+      return true;
+    }
+  }
+
+  bool _loadAllRukus() {
+    // Define the QuranHandler Variable
+    Chapter chapter = QuranHelper.instance
+        .GetChapterfromStaticList(chapterNo: widget.chapter_no);
+    if (chapter == null) return false;
+    _appBarTitle = 'Surah ${chapter.english_name}';
+    _chapterAllRukus = chapter.ruku_mapping;
+    return true;
   }
 
   Future<void> _setAudioPlayer() async {
-    await _mp.prepareAudioSource(widget.rukus[_currentRukuNo].file_name);
+    await _mp.prepareAudioSource(_chapterAllRukus[_currentRukuNo].file_name);
   }
 
   Future<void> _letsGo({bool play = false, bool changedScript = false}) async {
     if (_isplaying) await _mp.pauseAudio();
     // - Select currently playing ruku
-    var ruku = widget.rukus[_currentRukuNo];
+    var ruku = _chapterAllRukus[_currentRukuNo];
 
     // - Check if the selected verse is not in the current ruku
     if ((_currentSelectedVerse + 1) < ruku.first_verse ||
@@ -218,8 +226,8 @@ class _VerseListScreenState extends State<VerseListScreen>
 
   void _changeCurrentRukuNo() {
     // - Check that in which ruku _currentSelectedVerse falls
-    for (int num = 0; num < widget.rukus.length; num++) {
-      var ruku = widget.rukus[num];
+    for (int num = 0; num < _chapterAllRukus.length; num++) {
+      var ruku = _chapterAllRukus[num];
       if ((_currentSelectedVerse + 1) >= ruku.first_verse &&
           (_currentSelectedVerse + 1) <= ruku.last_verse) {
         _currentRukuNo = (num);
@@ -250,7 +258,7 @@ class _VerseListScreenState extends State<VerseListScreen>
   }
 
   _startDownloadIsolate() async {
-    if (_currentRukuNo >= widget.rukus.length - 1) return;
+    if (_currentRukuNo >= _chapterAllRukus.length - 1) return;
 
     final ReceivePort isolateToMainStream = ReceivePort();
     Isolate _isolate =
@@ -259,8 +267,8 @@ class _VerseListScreenState extends State<VerseListScreen>
     isolateToMainStream.listen((dynamic data) {
       if (data is SendPort) {
         data.send({
-          'fileName': widget.rukus[_currentRukuNo + 1].file_name,
-          'downloadsDir': _downloadsDir.path,
+          'fileName': _chapterAllRukus[_currentRukuNo + 1].file_name,
+          'downloadsDir': Constant.DOWNLOAD_DIR.path,
         });
       } else {
         print('--------------- [isolateToMainStream] -> $data ---------------');
@@ -289,6 +297,21 @@ class _VerseListScreenState extends State<VerseListScreen>
       }
     }
     _currentSelectedVerse = -1;
+  }
+
+  void releaseResources() async {
+    if (_mp != null) _mp.releasePlayer();
+    _mp = null;
+
+    if (_versesList != null && _versesList.length >= 0) _versesList.clear();
+    _versesList = null;
+
+    _iconPlay = null;
+    _itemScrollController = null;
+//    _itemPositionsListener = null;
+    Constant.DOWNLOAD_DIR = null;
+    CustomSharedPreferences.setBookmark(
+        widget.chapter_no, _currentSelectedVerse);
   }
 
   void printMessage(String msg) => print(TAG + msg);
@@ -361,7 +384,7 @@ class _VerseListScreenState extends State<VerseListScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('${widget.title}'),
+        title: Text('$_appBarTitle'),
         actions: <Widget>[
           _isDownloading
               ? Center(
@@ -411,14 +434,16 @@ class _VerseListScreenState extends State<VerseListScreen>
       ),
       body: Stack(
         children: <Widget>[
-          Listview(
-            _versesList,
-            currentSelectedVerse: _currentSelectedVerse,
-            quranScript: _quranScript,
-            itemScrollController: _itemScrollController,
-            onTap: tapOnTile,
-            onDoubleTap: doubleTapOnTile,
-          ),
+          _versesList == null || _versesList.length <= 0
+              ? Center(child: Text('Comming Soon...'))
+              : Listview(
+                  _versesList,
+                  currentSelectedVerse: _currentSelectedVerse,
+                  quranScript: _quranScript,
+                  itemScrollController: _itemScrollController,
+                  onTap: tapOnTile,
+                  onDoubleTap: doubleTapOnTile,
+                ),
 //          ScrollablePositionedList.builder(
 //            itemBuilder: (context, ind) {
 //              Verse verse = _versesList[ind];
@@ -480,7 +505,7 @@ class _VerseListScreenState extends State<VerseListScreen>
     printMessage('Dispose Called!!');
 
     // Release all resources
-    _releaseResources();
+    releaseResources();
   }
 
   @override

@@ -1,0 +1,4490 @@
+[
+    {
+        "ind": 1,
+        "name": "الفاتحة",
+        "english_name": "Al-Fatiha",
+        "title": "The Opening",
+        "is_maki": 1,
+        "total_verses": 7,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 7,
+                "total_verses": 7,
+                "file_name": "001-Al-Fatiha-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 2,
+        "name": "البقرة",
+        "english_name": "Al-Baqara",
+        "title": "The Cow",
+        "is_maki": 0,
+        "total_verses": 286,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 7,
+                "total_verses": 7,
+                "file_name": "002-Al-Baqara-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 8,
+                "last_verse": 20,
+                "total_verses": 13,
+                "file_name": "002-Al-Baqara-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 29,
+                "total_verses": 9,
+                "file_name": "002-Al-Baqara-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 30,
+                "last_verse": 39,
+                "total_verses": 10,
+                "file_name": "002-Al-Baqara-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 40,
+                "last_verse": 46,
+                "total_verses": 7,
+                "file_name": "002-Al-Baqara-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 47,
+                "last_verse": 59,
+                "total_verses": 13,
+                "file_name": "002-Al-Baqara-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 60,
+                "last_verse": 61,
+                "total_verses": 2,
+                "file_name": "002-Al-Baqara-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 62,
+                "last_verse": 71,
+                "total_verses": 10,
+                "file_name": "002-Al-Baqara-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 72,
+                "last_verse": 82,
+                "total_verses": 11,
+                "file_name": "002-Al-Baqara-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 83,
+                "last_verse": 86,
+                "total_verses": 4,
+                "file_name": "002-Al-Baqara-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 87,
+                "last_verse": 96,
+                "total_verses": 10,
+                "file_name": "002-Al-Baqara-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 97,
+                "last_verse": 103,
+                "total_verses": 7,
+                "file_name": "002-Al-Baqara-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 104,
+                "last_verse": 112,
+                "total_verses": 9,
+                "file_name": "002-Al-Baqara-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 113,
+                "last_verse": 121,
+                "total_verses": 9,
+                "file_name": "002-Al-Baqara-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 122,
+                "last_verse": 129,
+                "total_verses": 8,
+                "file_name": "002-Al-Baqara-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 130,
+                "last_verse": 141,
+                "total_verses": 12,
+                "file_name": "002-Al-Baqara-Ruku-16.mp3"
+            },
+            {
+                "first_verse": 142,
+                "last_verse": 147,
+                "total_verses": 6,
+                "file_name": "002-Al-Baqara-Ruku-17.mp3"
+            },
+            {
+                "first_verse": 148,
+                "last_verse": 152,
+                "total_verses": 5,
+                "file_name": "002-Al-Baqara-Ruku-18.mp3"
+            },
+            {
+                "first_verse": 153,
+                "last_verse": 163,
+                "total_verses": 11,
+                "file_name": "002-Al-Baqara-Ruku-19.mp3"
+            },
+            {
+                "first_verse": 164,
+                "last_verse": 167,
+                "total_verses": 4,
+                "file_name": "002-Al-Baqara-Ruku-20.mp3"
+            },
+            {
+                "first_verse": 168,
+                "last_verse": 176,
+                "total_verses": 9,
+                "file_name": "002-Al-Baqara-Ruku-21.mp3"
+            },
+            {
+                "first_verse": 177,
+                "last_verse": 182,
+                "total_verses": 6,
+                "file_name": "002-Al-Baqara-Ruku-22.mp3"
+            },
+            {
+                "first_verse": 183,
+                "last_verse": 188,
+                "total_verses": 6,
+                "file_name": "002-Al-Baqara-Ruku-23.mp3"
+            },
+            {
+                "first_verse": 189,
+                "last_verse": 196,
+                "total_verses": 8,
+                "file_name": "002-Al-Baqara-Ruku-24.mp3"
+            },
+            {
+                "first_verse": 197,
+                "last_verse": 210,
+                "total_verses": 14,
+                "file_name": "002-Al-Baqara-Ruku-25.mp3"
+            },
+            {
+                "first_verse": 211,
+                "last_verse": 216,
+                "total_verses": 6,
+                "file_name": "002-Al-Baqara-Ruku-26.mp3"
+            },
+            {
+                "first_verse": 217,
+                "last_verse": 221,
+                "total_verses": 5,
+                "file_name": "002-Al-Baqara-Ruku-27.mp3"
+            },
+            {
+                "first_verse": 222,
+                "last_verse": 228,
+                "total_verses": 7,
+                "file_name": "002-Al-Baqara-Ruku-28.mp3"
+            },
+            {
+                "first_verse": 229,
+                "last_verse": 231,
+                "total_verses": 3,
+                "file_name": "002-Al-Baqara-Ruku-29.mp3"
+            },
+            {
+                "first_verse": 232,
+                "last_verse": 235,
+                "total_verses": 4,
+                "file_name": "002-Al-Baqara-Ruku-30.mp3"
+            },
+            {
+                "first_verse": 236,
+                "last_verse": 242,
+                "total_verses": 7,
+                "file_name": "002-Al-Baqara-Ruku-31.mp3"
+            },
+            {
+                "first_verse": 243,
+                "last_verse": 248,
+                "total_verses": 6,
+                "file_name": "002-Al-Baqara-Ruku-32.mp3"
+            },
+            {
+                "first_verse": 249,
+                "last_verse": 253,
+                "total_verses": 5,
+                "file_name": "002-Al-Baqara-Ruku-33.mp3"
+            },
+            {
+                "first_verse": 254,
+                "last_verse": 257,
+                "total_verses": 4,
+                "file_name": "002-Al-Baqara-Ruku-34.mp3"
+            },
+            {
+                "first_verse": 258,
+                "last_verse": 260,
+                "total_verses": 3,
+                "file_name": "002-Al-Baqara-Ruku-35.mp3"
+            },
+            {
+                "first_verse": 261,
+                "last_verse": 266,
+                "total_verses": 6,
+                "file_name": "002-Al-Baqara-Ruku-36.mp3"
+            },
+            {
+                "first_verse": 267,
+                "last_verse": 273,
+                "total_verses": 7,
+                "file_name": "002-Al-Baqara-Ruku-37.mp3"
+            },
+            {
+                "first_verse": 274,
+                "last_verse": 281,
+                "total_verses": 8,
+                "file_name": "002-Al-Baqara-Ruku-38.mp3"
+            },
+            {
+                "first_verse": 282,
+                "last_verse": 283,
+                "total_verses": 2,
+                "file_name": "002-Al-Baqara-Ruku-39.mp3"
+            },
+            {
+                "first_verse": 284,
+                "last_verse": 286,
+                "total_verses": 3,
+                "file_name": "002-Al-Baqara-Ruku-40.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 3,
+        "name": "آل عمران",
+        "english_name": "Ale-Imran",
+        "title": "The Family of Imran",
+        "is_maki": 0,
+        "total_verses": 200,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 20,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 30,
+                "total_verses": 10,
+                "file_name": "003-Ale-Imran-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 41,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 42,
+                "last_verse": 54,
+                "total_verses": 13,
+                "file_name": "003-Ale-Imran-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 55,
+                "last_verse": 62,
+                "total_verses": 8,
+                "file_name": "003-Ale-Imran-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 63,
+                "last_verse": 71,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 72,
+                "last_verse": 80,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 81,
+                "last_verse": 91,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 92,
+                "last_verse": 101,
+                "total_verses": 10,
+                "file_name": "003-Ale-Imran-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 102,
+                "last_verse": 109,
+                "total_verses": 8,
+                "file_name": "003-Ale-Imran-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 110,
+                "last_verse": 120,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 121,
+                "last_verse": 129,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 130,
+                "last_verse": 143,
+                "total_verses": 14,
+                "file_name": "003-Ale-Imran-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 144,
+                "last_verse": 148,
+                "total_verses": 5,
+                "file_name": "003-Ale-Imran-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 149,
+                "last_verse": 155,
+                "total_verses": 7,
+                "file_name": "003-Ale-Imran-Ruku-16.mp3"
+            },
+            {
+                "first_verse": 156,
+                "last_verse": 177,
+                "total_verses": 22,
+                "file_name": "003-Ale-Imran-Ruku-17.mp3"
+            },
+            {
+                "first_verse": 178,
+                "last_verse": 180,
+                "total_verses": 3,
+                "file_name": "003-Ale-Imran-Ruku-18.mp3"
+            },
+            {
+                "first_verse": 181,
+                "last_verse": 189,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-19.mp3"
+            },
+            {
+                "first_verse": 190,
+                "last_verse": 200,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-20.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 4,
+        "name": "النساء",
+        "english_name": "Al-Nisa",
+        "title": "The Women",
+        "is_maki": 0,
+        "total_verses": 176,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "004-Al-Nisa-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 14,
+                "total_verses": 4,
+                "file_name": "004-Al-Nisa-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 15,
+                "last_verse": 22,
+                "total_verses": 8,
+                "file_name": "004-Al-Nisa-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 25,
+                "total_verses": 3,
+                "file_name": "004-Al-Nisa-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 33,
+                "total_verses": 8,
+                "file_name": "004-Al-Nisa-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 34,
+                "last_verse": 42,
+                "total_verses": 9,
+                "file_name": "004-Al-Nisa-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 43,
+                "last_verse": 50,
+                "total_verses": 8,
+                "file_name": "004-Al-Nisa-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 59,
+                "total_verses": 9,
+                "file_name": "004-Al-Nisa-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 60,
+                "last_verse": 70,
+                "total_verses": 11,
+                "file_name": "004-Al-Nisa-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 71,
+                "last_verse": 76,
+                "total_verses": 6,
+                "file_name": "004-Al-Nisa-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 77,
+                "last_verse": 87,
+                "total_verses": 11,
+                "file_name": "004-Al-Nisa-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 88,
+                "last_verse": 91,
+                "total_verses": 4,
+                "file_name": "004-Al-Nisa-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 92,
+                "last_verse": 96,
+                "total_verses": 5,
+                "file_name": "004-Al-Nisa-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 97,
+                "last_verse": 100,
+                "total_verses": 4,
+                "file_name": "004-Al-Nisa-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 101,
+                "last_verse": 104,
+                "total_verses": 4,
+                "file_name": "004-Al-Nisa-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 105,
+                "last_verse": 112,
+                "total_verses": 8,
+                "file_name": "004-Al-Nisa-Ruku-16.mp3"
+            },
+            {
+                "first_verse": 113,
+                "last_verse": 115,
+                "total_verses": 3,
+                "file_name": "004-Al-Nisa-Ruku-17.mp3"
+            },
+            {
+                "first_verse": 116,
+                "last_verse": 126,
+                "total_verses": 11,
+                "file_name": "004-Al-Nisa-Ruku-18.mp3"
+            },
+            {
+                "first_verse": 127,
+                "last_verse": 134,
+                "total_verses": 8,
+                "file_name": "004-Al-Nisa-Ruku-19.mp3"
+            },
+            {
+                "first_verse": 135,
+                "last_verse": 141,
+                "total_verses": 7,
+                "file_name": "004-Al-Nisa-Ruku-20.mp3"
+            },
+            {
+                "first_verse": 142,
+                "last_verse": 152,
+                "total_verses": 11,
+                "file_name": "004-Al-Nisa-Ruku-21.mp3"
+            },
+            {
+                "first_verse": 153,
+                "last_verse": 162,
+                "total_verses": 10,
+                "file_name": "004-Al-Nisa-Ruku-22.mp3"
+            },
+            {
+                "first_verse": 163,
+                "last_verse": 171,
+                "total_verses": 9,
+                "file_name": "004-Al-Nisa-Ruku-23.mp3"
+            },
+            {
+                "first_verse": 172,
+                "last_verse": 176,
+                "total_verses": 5,
+                "file_name": "004-Al-Nisa-Ruku-24.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 5,
+        "name": "المائدة",
+        "english_name": "Al-Maeda",
+        "title": "The Table Spread with Food",
+        "is_maki": 0,
+        "total_verses": 120,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 5,
+                "total_verses": 5,
+                "file_name": "005-Al-Maeda-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 6,
+                "last_verse": 11,
+                "total_verses": 6,
+                "file_name": "005-Al-Maeda-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 12,
+                "last_verse": 19,
+                "total_verses": 8,
+                "file_name": "005-Al-Maeda-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 26,
+                "total_verses": 7,
+                "file_name": "005-Al-Maeda-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 34,
+                "total_verses": 8,
+                "file_name": "005-Al-Maeda-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 35,
+                "last_verse": 43,
+                "total_verses": 9,
+                "file_name": "005-Al-Maeda-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 44,
+                "last_verse": 50,
+                "total_verses": 7,
+                "file_name": "005-Al-Maeda-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 56,
+                "total_verses": 6,
+                "file_name": "005-Al-Maeda-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 57,
+                "last_verse": 66,
+                "total_verses": 10,
+                "file_name": "005-Al-Maeda-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 67,
+                "last_verse": 77,
+                "total_verses": 11,
+                "file_name": "005-Al-Maeda-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 78,
+                "last_verse": 86,
+                "total_verses": 9,
+                "file_name": "005-Al-Maeda-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 87,
+                "last_verse": 93,
+                "total_verses": 7,
+                "file_name": "005-Al-Maeda-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 94,
+                "last_verse": 100,
+                "total_verses": 7,
+                "file_name": "005-Al-Maeda-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 101,
+                "last_verse": 108,
+                "total_verses": 8,
+                "file_name": "005-Al-Maeda-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 109,
+                "last_verse": 115,
+                "total_verses": 7,
+                "file_name": "005-Al-Maeda-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 116,
+                "last_verse": 120,
+                "total_verses": 5,
+                "file_name": "005-Al-Maeda-Ruku-16.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 6,
+        "name": "الأنعام",
+        "english_name": "Al-Anaam",
+        "title": "The Cattles",
+        "is_maki": 1,
+        "total_verses": 165,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "006-Al-Anaam-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 20,
+                "total_verses": 10,
+                "file_name": "006-Al-Anaam-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 30,
+                "total_verses": 10,
+                "file_name": "006-Al-Anaam-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 41,
+                "total_verses": 11,
+                "file_name": "006-Al-Anaam-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 42,
+                "last_verse": 50,
+                "total_verses": 9,
+                "file_name": "006-Al-Anaam-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 55,
+                "total_verses": 5,
+                "file_name": "006-Al-Anaam-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 56,
+                "last_verse": 60,
+                "total_verses": 5,
+                "file_name": "006-Al-Anaam-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 70,
+                "total_verses": 10,
+                "file_name": "006-Al-Anaam-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 71,
+                "last_verse": 82,
+                "total_verses": 12,
+                "file_name": "006-Al-Anaam-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 83,
+                "last_verse": 90,
+                "total_verses": 8,
+                "file_name": "006-Al-Anaam-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 91,
+                "last_verse": 94,
+                "total_verses": 4,
+                "file_name": "006-Al-Anaam-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 95,
+                "last_verse": 100,
+                "total_verses": 6,
+                "file_name": "006-Al-Anaam-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 101,
+                "last_verse": 110,
+                "total_verses": 10,
+                "file_name": "006-Al-Anaam-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 111,
+                "last_verse": 121,
+                "total_verses": 11,
+                "file_name": "006-Al-Anaam-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 122,
+                "last_verse": 129,
+                "total_verses": 8,
+                "file_name": "006-Al-Anaam-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 130,
+                "last_verse": 140,
+                "total_verses": 11,
+                "file_name": "006-Al-Anaam-Ruku-16.mp3"
+            },
+            {
+                "first_verse": 141,
+                "last_verse": 144,
+                "total_verses": 4,
+                "file_name": "006-Al-Anaam-Ruku-17.mp3"
+            },
+            {
+                "first_verse": 145,
+                "last_verse": 150,
+                "total_verses": 6,
+                "file_name": "006-Al-Anaam-Ruku-18.mp3"
+            },
+            {
+                "first_verse": 151,
+                "last_verse": 154,
+                "total_verses": 4,
+                "file_name": "006-Al-Anaam-Ruku-19.mp3"
+            },
+            {
+                "first_verse": 155,
+                "last_verse": 165,
+                "total_verses": 11,
+                "file_name": "006-Al-Anaam-Ruku-20.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 7,
+        "name": "الأعراف",
+        "english_name": "Al-Aaraf",
+        "title": "The Heights",
+        "is_maki": 1,
+        "total_verses": 206,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "007-Al-Aaraf-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 25,
+                "total_verses": 15,
+                "file_name": "007-Al-Aaraf-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 31,
+                "total_verses": 6,
+                "file_name": "007-Al-Aaraf-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 32,
+                "last_verse": 39,
+                "total_verses": 8,
+                "file_name": "007-Al-Aaraf-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 40,
+                "last_verse": 47,
+                "total_verses": 8,
+                "file_name": "007-Al-Aaraf-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 48,
+                "last_verse": 53,
+                "total_verses": 6,
+                "file_name": "007-Al-Aaraf-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 54,
+                "last_verse": 58,
+                "total_verses": 5,
+                "file_name": "007-Al-Aaraf-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 59,
+                "last_verse": 64,
+                "total_verses": 6,
+                "file_name": "007-Al-Aaraf-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 65,
+                "last_verse": 72,
+                "total_verses": 8,
+                "file_name": "007-Al-Aaraf-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 73,
+                "last_verse": 84,
+                "total_verses": 12,
+                "file_name": "007-Al-Aaraf-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 85,
+                "last_verse": 93,
+                "total_verses": 9,
+                "file_name": "007-Al-Aaraf-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 94,
+                "last_verse": 99,
+                "total_verses": 6,
+                "file_name": "007-Al-Aaraf-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 100,
+                "last_verse": 108,
+                "total_verses": 9,
+                "file_name": "007-Al-Aaraf-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 109,
+                "last_verse": 126,
+                "total_verses": 18,
+                "file_name": "007-Al-Aaraf-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 127,
+                "last_verse": 129,
+                "total_verses": 3,
+                "file_name": "007-Al-Aaraf-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 130,
+                "last_verse": 141,
+                "total_verses": 12,
+                "file_name": "007-Al-Aaraf-Ruku-16.mp3"
+            },
+            {
+                "first_verse": 142,
+                "last_verse": 147,
+                "total_verses": 6,
+                "file_name": "007-Al-Aaraf-Ruku-17.mp3"
+            },
+            {
+                "first_verse": 148,
+                "last_verse": 151,
+                "total_verses": 4,
+                "file_name": "007-Al-Aaraf-Ruku-18.mp3"
+            },
+            {
+                "first_verse": 152,
+                "last_verse": 157,
+                "total_verses": 6,
+                "file_name": "007-Al-Aaraf-Ruku-19.mp3"
+            },
+            {
+                "first_verse": 158,
+                "last_verse": 162,
+                "total_verses": 5,
+                "file_name": "007-Al-Aaraf-Ruku-20.mp3"
+            },
+            {
+                "first_verse": 163,
+                "last_verse": 171,
+                "total_verses": 9,
+                "file_name": "007-Al-Aaraf-Ruku-21.mp3"
+            },
+            {
+                "first_verse": 172,
+                "last_verse": 181,
+                "total_verses": 10,
+                "file_name": "007-Al-Aaraf-Ruku-22.mp3"
+            },
+            {
+                "first_verse": 182,
+                "last_verse": 188,
+                "total_verses": 7,
+                "file_name": "007-Al-Aaraf-Ruku-23.mp3"
+            },
+            {
+                "first_verse": 189,
+                "last_verse": 206,
+                "total_verses": 18,
+                "file_name": "007-Al-Aaraf-Ruku-24.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 8,
+        "name": "الأنفال",
+        "english_name": "Al-Anfaal",
+        "title": "The Spoils of War",
+        "is_maki": 0,
+        "total_verses": 75,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "008-Al-Anfaal-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 19,
+                "total_verses": 9,
+                "file_name": "008-Al-Anfaal-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 28,
+                "total_verses": 9,
+                "file_name": "008-Al-Anfaal-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 29,
+                "last_verse": 37,
+                "total_verses": 9,
+                "file_name": "008-Al-Anfaal-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 38,
+                "last_verse": 44,
+                "total_verses": 7,
+                "file_name": "008-Al-Anfaal-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 45,
+                "last_verse": 48,
+                "total_verses": 4,
+                "file_name": "008-Al-Anfaal-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 49,
+                "last_verse": 58,
+                "total_verses": 10,
+                "file_name": "008-Al-Anfaal-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 59,
+                "last_verse": 64,
+                "total_verses": 6,
+                "file_name": "008-Al-Anfaal-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 65,
+                "last_verse": 69,
+                "total_verses": 5,
+                "file_name": "008-Al-Anfaal-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 70,
+                "last_verse": 75,
+                "total_verses": 6,
+                "file_name": "008-Al-Anfaal-Ruku-10.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 9,
+        "name": "التوبة",
+        "english_name": "Al-Tauba",
+        "title": "The Repentance",
+        "is_maki": 0,
+        "total_verses": 129,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 6,
+                "total_verses": 6,
+                "file_name": "009-Al-Tauba-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 7,
+                "last_verse": 16,
+                "total_verses": 10,
+                "file_name": "009-Al-Tauba-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 17,
+                "last_verse": 24,
+                "total_verses": 8,
+                "file_name": "009-Al-Tauba-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 25,
+                "last_verse": 29,
+                "total_verses": 5,
+                "file_name": "009-Al-Tauba-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 30,
+                "last_verse": 37,
+                "total_verses": 8,
+                "file_name": "009-Al-Tauba-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 38,
+                "last_verse": 42,
+                "total_verses": 5,
+                "file_name": "009-Al-Tauba-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 43,
+                "last_verse": 59,
+                "total_verses": 17,
+                "file_name": "009-Al-Tauba-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 60,
+                "last_verse": 66,
+                "total_verses": 7,
+                "file_name": "009-Al-Tauba-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 67,
+                "last_verse": 72,
+                "total_verses": 6,
+                "file_name": "009-Al-Tauba-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 73,
+                "last_verse": 80,
+                "total_verses": 8,
+                "file_name": "009-Al-Tauba-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 81,
+                "last_verse": 89,
+                "total_verses": 9,
+                "file_name": "009-Al-Tauba-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 90,
+                "last_verse": 99,
+                "total_verses": 10,
+                "file_name": "009-Al-Tauba-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 100,
+                "last_verse": 110,
+                "total_verses": 11,
+                "file_name": "009-Al-Tauba-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 111,
+                "last_verse": 118,
+                "total_verses": 8,
+                "file_name": "009-Al-Tauba-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 119,
+                "last_verse": 122,
+                "total_verses": 4,
+                "file_name": "009-Al-Tauba-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 123,
+                "last_verse": 129,
+                "total_verses": 7,
+                "file_name": "009-Al-Tauba-Ruku-16.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 10,
+        "name": "يونس",
+        "english_name": "Younus",
+        "title": "Jonah",
+        "is_maki": 1,
+        "total_verses": 109,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "010-Younus-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 20,
+                "total_verses": 10,
+                "file_name": "010-Younus-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 30,
+                "total_verses": 10,
+                "file_name": "010-Younus-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 40,
+                "total_verses": 10,
+                "file_name": "010-Younus-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 53,
+                "total_verses": 13,
+                "file_name": "010-Younus-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 54,
+                "last_verse": 60,
+                "total_verses": 7,
+                "file_name": "010-Younus-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 70,
+                "total_verses": 10,
+                "file_name": "010-Younus-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 71,
+                "last_verse": 82,
+                "total_verses": 12,
+                "file_name": "010-Younus-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 83,
+                "last_verse": 92,
+                "total_verses": 10,
+                "file_name": "010-Younus-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 93,
+                "last_verse": 103,
+                "total_verses": 11,
+                "file_name": "010-Younus-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 104,
+                "last_verse": 109,
+                "total_verses": 6,
+                "file_name": "010-Younus-Ruku-11.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 11,
+        "name": "هود",
+        "english_name": "Hood",
+        "title": "Hud",
+        "is_maki": 1,
+        "total_verses": 123,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "011-Hood-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 9,
+                "last_verse": 24,
+                "total_verses": 16,
+                "file_name": "011-Hood-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 25,
+                "last_verse": 35,
+                "total_verses": 11,
+                "file_name": "011-Hood-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 36,
+                "last_verse": 49,
+                "total_verses": 14,
+                "file_name": "011-Hood-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 50,
+                "last_verse": 60,
+                "total_verses": 11,
+                "file_name": "011-Hood-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 68,
+                "total_verses": 8,
+                "file_name": "011-Hood-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 69,
+                "last_verse": 83,
+                "total_verses": 15,
+                "file_name": "011-Hood-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 84,
+                "last_verse": 95,
+                "total_verses": 12,
+                "file_name": "011-Hood-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 96,
+                "last_verse": 109,
+                "total_verses": 14,
+                "file_name": "011-Hood-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 110,
+                "last_verse": 123,
+                "total_verses": 14,
+                "file_name": "011-Hood-Ruku-10.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 12,
+        "name": "يوسف",
+        "english_name": "Yousuf",
+        "title": "Joseph",
+        "is_maki": 1,
+        "total_verses": 111,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 6,
+                "total_verses": 6,
+                "file_name": "012-Yousuf-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 7,
+                "last_verse": 12,
+                "total_verses": 6,
+                "file_name": "012-Yousuf-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 13,
+                "last_verse": 29,
+                "total_verses": 17,
+                "file_name": "012-Yousuf-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 30,
+                "last_verse": 35,
+                "total_verses": 6,
+                "file_name": "012-Yousuf-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 36,
+                "last_verse": 42,
+                "total_verses": 7,
+                "file_name": "012-Yousuf-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 43,
+                "last_verse": 49,
+                "total_verses": 7,
+                "file_name": "012-Yousuf-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 50,
+                "last_verse": 57,
+                "total_verses": 8,
+                "file_name": "012-Yousuf-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 58,
+                "last_verse": 68,
+                "total_verses": 11,
+                "file_name": "012-Yousuf-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 69,
+                "last_verse": 79,
+                "total_verses": 11,
+                "file_name": "012-Yousuf-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 80,
+                "last_verse": 93,
+                "total_verses": 14,
+                "file_name": "012-Yousuf-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 94,
+                "last_verse": 104,
+                "total_verses": 11,
+                "file_name": "012-Yousuf-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 105,
+                "last_verse": 111,
+                "total_verses": 7,
+                "file_name": "012-Yousuf-Ruku-12.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 13,
+        "name": "الرعد",
+        "english_name": "Al-Raad",
+        "title": "The Thunder",
+        "is_maki": 0,
+        "total_verses": 43,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 7,
+                "total_verses": 7,
+                "file_name": "013-Al-Raad-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 8,
+                "last_verse": 18,
+                "total_verses": 11,
+                "file_name": "013-Al-Raad-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 19,
+                "last_verse": 26,
+                "total_verses": 8,
+                "file_name": "013-Al-Raad-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 31,
+                "total_verses": 5,
+                "file_name": "013-Al-Raad-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 32,
+                "last_verse": 37,
+                "total_verses": 6,
+                "file_name": "013-Al-Raad-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 38,
+                "last_verse": 43,
+                "total_verses": 6,
+                "file_name": "013-Al-Raad-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 14,
+        "name": "ابراهيم",
+        "english_name": "Ibrahim",
+        "title": "Abraham",
+        "is_maki": 1,
+        "total_verses": 52,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 6,
+                "total_verses": 6,
+                "file_name": "014-Ibrahim-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 7,
+                "last_verse": 12,
+                "total_verses": 6,
+                "file_name": "014-Ibrahim-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 13,
+                "last_verse": 21,
+                "total_verses": 9,
+                "file_name": "014-Ibrahim-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 22,
+                "last_verse": 27,
+                "total_verses": 6,
+                "file_name": "014-Ibrahim-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 28,
+                "last_verse": 34,
+                "total_verses": 7,
+                "file_name": "014-Ibrahim-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 35,
+                "last_verse": 41,
+                "total_verses": 7,
+                "file_name": "014-Ibrahim-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 42,
+                "last_verse": 52,
+                "total_verses": 11,
+                "file_name": "014-Ibrahim-Ruku-07.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 15,
+        "name": "الحجر",
+        "english_name": "Al-Hijr",
+        "title": "The Rocky Tract",
+        "is_maki": 1,
+        "total_verses": 99,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 15,
+                "total_verses": 15,
+                "file_name": "015-Al-Hijr-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 16,
+                "last_verse": 25,
+                "total_verses": 10,
+                "file_name": "015-Al-Hijr-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 44,
+                "total_verses": 19,
+                "file_name": "015-Al-Hijr-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 45,
+                "last_verse": 60,
+                "total_verses": 16,
+                "file_name": "015-Al-Hijr-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 79,
+                "total_verses": 19,
+                "file_name": "015-Al-Hijr-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 80,
+                "last_verse": 99,
+                "total_verses": 20,
+                "file_name": "015-Al-Hijr-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 16,
+        "name": "النحل",
+        "english_name": "Al-Nahal",
+        "title": "The Bees",
+        "is_maki": 1,
+        "total_verses": 128,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "016-Al-Nahal-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 21,
+                "total_verses": 12,
+                "file_name": "016-Al-Nahal-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 22,
+                "last_verse": 25,
+                "total_verses": 4,
+                "file_name": "016-Al-Nahal-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 34,
+                "total_verses": 9,
+                "file_name": "016-Al-Nahal-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 35,
+                "last_verse": 40,
+                "total_verses": 6,
+                "file_name": "016-Al-Nahal-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 50,
+                "total_verses": 10,
+                "file_name": "016-Al-Nahal-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 60,
+                "total_verses": 10,
+                "file_name": "016-Al-Nahal-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 65,
+                "total_verses": 5,
+                "file_name": "016-Al-Nahal-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 66,
+                "last_verse": 70,
+                "total_verses": 5,
+                "file_name": "016-Al-Nahal-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 71,
+                "last_verse": 76,
+                "total_verses": 6,
+                "file_name": "016-Al-Nahal-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 77,
+                "last_verse": 83,
+                "total_verses": 7,
+                "file_name": "016-Al-Nahal-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 84,
+                "last_verse": 89,
+                "total_verses": 6,
+                "file_name": "016-Al-Nahal-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 90,
+                "last_verse": 100,
+                "total_verses": 11,
+                "file_name": "016-Al-Nahal-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 101,
+                "last_verse": 110,
+                "total_verses": 10,
+                "file_name": "016-Al-Nahal-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 111,
+                "last_verse": 119,
+                "total_verses": 9,
+                "file_name": "016-Al-Nahal-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 120,
+                "last_verse": 128,
+                "total_verses": 9,
+                "file_name": "016-Al-Nahal-Ruku-16.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 17,
+        "name": "الإسراء",
+        "english_name": "Bani-Israil",
+        "title": "The Journey by Night",
+        "is_maki": 1,
+        "total_verses": 111,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "017-Bani-Israil-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 22,
+                "total_verses": 12,
+                "file_name": "017-Bani-Israil-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 30,
+                "total_verses": 8,
+                "file_name": "017-Bani-Israil-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 40,
+                "total_verses": 10,
+                "file_name": "017-Bani-Israil-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 52,
+                "total_verses": 12,
+                "file_name": "017-Bani-Israil-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 53,
+                "last_verse": 60,
+                "total_verses": 8,
+                "file_name": "017-Bani-Israil-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 70,
+                "total_verses": 10,
+                "file_name": "017-Bani-Israil-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 71,
+                "last_verse": 77,
+                "total_verses": 7,
+                "file_name": "017-Bani-Israil-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 78,
+                "last_verse": 84,
+                "total_verses": 7,
+                "file_name": "017-Bani-Israil-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 85,
+                "last_verse": 93,
+                "total_verses": 9,
+                "file_name": "017-Bani-Israil-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 94,
+                "last_verse": 100,
+                "total_verses": 7,
+                "file_name": "017-Bani-Israil-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 101,
+                "last_verse": 111,
+                "total_verses": 11,
+                "file_name": "017-Bani-Israil-Ruku-12.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 18,
+        "name": "الكهف",
+        "english_name": "Al-Kahaf",
+        "title": "The Cave",
+        "is_maki": 1,
+        "total_verses": 110,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 12,
+                "total_verses": 12,
+                "file_name": "018-Al-Kahaf-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 13,
+                "last_verse": 17,
+                "total_verses": 5,
+                "file_name": "018-Al-Kahaf-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 18,
+                "last_verse": 22,
+                "total_verses": 5,
+                "file_name": "018-Al-Kahaf-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 31,
+                "total_verses": 9,
+                "file_name": "018-Al-Kahaf-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 32,
+                "last_verse": 44,
+                "total_verses": 13,
+                "file_name": "018-Al-Kahaf-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 45,
+                "last_verse": 49,
+                "total_verses": 5,
+                "file_name": "018-Al-Kahaf-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 50,
+                "last_verse": 53,
+                "total_verses": 4,
+                "file_name": "018-Al-Kahaf-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 54,
+                "last_verse": 59,
+                "total_verses": 6,
+                "file_name": "018-Al-Kahaf-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 60,
+                "last_verse": 70,
+                "total_verses": 11,
+                "file_name": "018-Al-Kahaf-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 71,
+                "last_verse": 82,
+                "total_verses": 12,
+                "file_name": "018-Al-Kahaf-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 83,
+                "last_verse": 101,
+                "total_verses": 19,
+                "file_name": "018-Al-Kahaf-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 102,
+                "last_verse": 110,
+                "total_verses": 9,
+                "file_name": "018-Al-Kahaf-Ruku-12.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 19,
+        "name": "مريم",
+        "english_name": "Mariyam",
+        "title": "Mary",
+        "is_maki": 1,
+        "total_verses": 98,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 15,
+                "total_verses": 15,
+                "file_name": "019-Mariyam-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 16,
+                "last_verse": 40,
+                "total_verses": 25,
+                "file_name": "019-Mariyam-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 50,
+                "total_verses": 10,
+                "file_name": "019-Mariyam-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 65,
+                "total_verses": 15,
+                "file_name": "019-Mariyam-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 66,
+                "last_verse": 82,
+                "total_verses": 17,
+                "file_name": "019-Mariyam-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 83,
+                "last_verse": 98,
+                "total_verses": 16,
+                "file_name": "019-Mariyam-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 20,
+        "name": "طه",
+        "english_name": "Taha",
+        "title": "Ta Ha",
+        "is_maki": 1,
+        "total_verses": 135,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 24,
+                "total_verses": 24,
+                "file_name": "020-Taha-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 25,
+                "last_verse": 54,
+                "total_verses": 30,
+                "file_name": "020-Taha-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 55,
+                "last_verse": 76,
+                "total_verses": 22,
+                "file_name": "020-Taha-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 77,
+                "last_verse": 89,
+                "total_verses": 13,
+                "file_name": "020-Taha-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 90,
+                "last_verse": 104,
+                "total_verses": 15,
+                "file_name": "020-Taha-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 105,
+                "last_verse": 115,
+                "total_verses": 11,
+                "file_name": "020-Taha-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 116,
+                "last_verse": 128,
+                "total_verses": 13,
+                "file_name": "020-Taha-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 129,
+                "last_verse": 135,
+                "total_verses": 7,
+                "file_name": "020-Taha-Ruku-08.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 21,
+        "name": "الأنبياء",
+        "english_name": "Al-Ambia",
+        "title": "The Prophets",
+        "is_maki": 1,
+        "total_verses": 112,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "021-Al-Ambia-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 29,
+                "total_verses": 19,
+                "file_name": "021-Al-Ambia-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 30,
+                "last_verse": 41,
+                "total_verses": 12,
+                "file_name": "021-Al-Ambia-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 42,
+                "last_verse": 50,
+                "total_verses": 9,
+                "file_name": "021-Al-Ambia-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 75,
+                "total_verses": 25,
+                "file_name": "021-Al-Ambia-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 76,
+                "last_verse": 93,
+                "total_verses": 18,
+                "file_name": "021-Al-Ambia-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 94,
+                "last_verse": 112,
+                "total_verses": 19,
+                "file_name": "021-Al-Ambia-Ruku-07.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 22,
+        "name": "الحج",
+        "english_name": "Al-Hajj",
+        "title": "The Pilgrimage",
+        "is_maki": 0,
+        "total_verses": 78,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "022-Al-Hajj-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 22,
+                "total_verses": 12,
+                "file_name": "022-Al-Hajj-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 25,
+                "total_verses": 3,
+                "file_name": "022-Al-Hajj-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 33,
+                "total_verses": 8,
+                "file_name": "022-Al-Hajj-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 34,
+                "last_verse": 38,
+                "total_verses": 5,
+                "file_name": "022-Al-Hajj-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 39,
+                "last_verse": 48,
+                "total_verses": 10,
+                "file_name": "022-Al-Hajj-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 49,
+                "last_verse": 57,
+                "total_verses": 9,
+                "file_name": "022-Al-Hajj-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 58,
+                "last_verse": 64,
+                "total_verses": 7,
+                "file_name": "022-Al-Hajj-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 65,
+                "last_verse": 72,
+                "total_verses": 8,
+                "file_name": "022-Al-Hajj-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 73,
+                "last_verse": 78,
+                "total_verses": 6,
+                "file_name": "022-Al-Hajj-Ruku-10.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 23,
+        "name": "المؤمنون",
+        "english_name": "Al-Mouminoon",
+        "title": "The Believers",
+        "is_maki": 1,
+        "total_verses": 118,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 22,
+                "total_verses": 22,
+                "file_name": "023-Al-Mouminoon-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 32,
+                "total_verses": 10,
+                "file_name": "023-Al-Mouminoon-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 33,
+                "last_verse": 50,
+                "total_verses": 18,
+                "file_name": "023-Al-Mouminoon-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 77,
+                "total_verses": 27,
+                "file_name": "023-Al-Mouminoon-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 78,
+                "last_verse": 92,
+                "total_verses": 15,
+                "file_name": "023-Al-Mouminoon-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 93,
+                "last_verse": 118,
+                "total_verses": 26,
+                "file_name": "023-Al-Mouminoon-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 24,
+        "name": "النور",
+        "english_name": "Al-Noor",
+        "title": "The Light",
+        "is_maki": 0,
+        "total_verses": 64,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "024-Al-Noor-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 20,
+                "total_verses": 10,
+                "file_name": "024-Al-Noor-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 26,
+                "total_verses": 6,
+                "file_name": "024-Al-Noor-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 34,
+                "total_verses": 8,
+                "file_name": "024-Al-Noor-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 35,
+                "last_verse": 40,
+                "total_verses": 6,
+                "file_name": "024-Al-Noor-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 50,
+                "total_verses": 10,
+                "file_name": "024-Al-Noor-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 57,
+                "total_verses": 7,
+                "file_name": "024-Al-Noor-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 58,
+                "last_verse": 61,
+                "total_verses": 4,
+                "file_name": "024-Al-Noor-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 62,
+                "last_verse": 64,
+                "total_verses": 3,
+                "file_name": "024-Al-Noor-Ruku-09.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 25,
+        "name": "الفرقان",
+        "english_name": "Al-Furqaan",
+        "title": "The Criterion",
+        "is_maki": 1,
+        "total_verses": 77,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "025-Al-Furqaan-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 20,
+                "total_verses": 11,
+                "file_name": "025-Al-Furqaan-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 34,
+                "total_verses": 14,
+                "file_name": "025-Al-Furqaan-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 35,
+                "last_verse": 44,
+                "total_verses": 10,
+                "file_name": "025-Al-Furqaan-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 45,
+                "last_verse": 60,
+                "total_verses": 16,
+                "file_name": "025-Al-Furqaan-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 77,
+                "total_verses": 17,
+                "file_name": "025-Al-Furqaan-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 26,
+        "name": "الشعراء",
+        "english_name": "Al-Shuara",
+        "title": "The Poets",
+        "is_maki": 1,
+        "total_verses": 227,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "026-Al-Shuara-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 33,
+                "total_verses": 24,
+                "file_name": "026-Al-Shuara-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 34,
+                "last_verse": 51,
+                "total_verses": 18,
+                "file_name": "026-Al-Shuara-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 52,
+                "last_verse": 67,
+                "total_verses": 16,
+                "file_name": "026-Al-Shuara-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 68,
+                "last_verse": 105,
+                "total_verses": 38,
+                "file_name": "026-Al-Shuara-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 106,
+                "last_verse": 121,
+                "total_verses": 16,
+                "file_name": "026-Al-Shuara-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 122,
+                "last_verse": 140,
+                "total_verses": 19,
+                "file_name": "026-Al-Shuara-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 141,
+                "last_verse": 159,
+                "total_verses": 19,
+                "file_name": "026-Al-Shuara-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 160,
+                "last_verse": 175,
+                "total_verses": 16,
+                "file_name": "026-Al-Shuara-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 176,
+                "last_verse": 191,
+                "total_verses": 16,
+                "file_name": "026-Al-Shuara-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 192,
+                "last_verse": 227,
+                "total_verses": 36,
+                "file_name": "026-Al-Shuara-Ruku-11.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 27,
+        "name": "النمل",
+        "english_name": "Al-Namal",
+        "title": "The Ants",
+        "is_maki": 1,
+        "total_verses": 93,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 14,
+                "total_verses": 14,
+                "file_name": "027-Al-Namal-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 15,
+                "last_verse": 31,
+                "total_verses": 17,
+                "file_name": "027-Al-Namal-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 32,
+                "last_verse": 44,
+                "total_verses": 13,
+                "file_name": "027-Al-Namal-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 45,
+                "last_verse": 58,
+                "total_verses": 14,
+                "file_name": "027-Al-Namal-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 59,
+                "last_verse": 66,
+                "total_verses": 8,
+                "file_name": "027-Al-Namal-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 67,
+                "last_verse": 82,
+                "total_verses": 16,
+                "file_name": "027-Al-Namal-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 83,
+                "last_verse": 93,
+                "total_verses": 11,
+                "file_name": "027-Al-Namal-Ruku-07.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 28,
+        "name": "القصص",
+        "english_name": "Al-Qasas",
+        "title": "The Narration",
+        "is_maki": 1,
+        "total_verses": 88,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 13,
+                "total_verses": 13,
+                "file_name": "028-Al-Qasas-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 14,
+                "last_verse": 21,
+                "total_verses": 8,
+                "file_name": "028-Al-Qasas-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 22,
+                "last_verse": 28,
+                "total_verses": 7,
+                "file_name": "028-Al-Qasas-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 29,
+                "last_verse": 42,
+                "total_verses": 14,
+                "file_name": "028-Al-Qasas-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 43,
+                "last_verse": 50,
+                "total_verses": 8,
+                "file_name": "028-Al-Qasas-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 60,
+                "total_verses": 10,
+                "file_name": "028-Al-Qasas-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 75,
+                "total_verses": 15,
+                "file_name": "028-Al-Qasas-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 76,
+                "last_verse": 82,
+                "total_verses": 7,
+                "file_name": "028-Al-Qasas-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 83,
+                "last_verse": 88,
+                "total_verses": 6,
+                "file_name": "028-Al-Qasas-Ruku-09.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 29,
+        "name": "العنكبوت",
+        "english_name": "Al-Ankaboot",
+        "title": "The Spider",
+        "is_maki": 1,
+        "total_verses": 69,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 13,
+                "total_verses": 13,
+                "file_name": "029-Al-Ankaboot-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 14,
+                "last_verse": 22,
+                "total_verses": 9,
+                "file_name": "029-Al-Ankaboot-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 30,
+                "total_verses": 8,
+                "file_name": "029-Al-Ankaboot-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 44,
+                "total_verses": 14,
+                "file_name": "029-Al-Ankaboot-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 45,
+                "last_verse": 51,
+                "total_verses": 7,
+                "file_name": "029-Al-Ankaboot-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 52,
+                "last_verse": 63,
+                "total_verses": 12,
+                "file_name": "029-Al-Ankaboot-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 64,
+                "last_verse": 69,
+                "total_verses": 6,
+                "file_name": "029-Al-Ankaboot-Ruku-07.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 30,
+        "name": "الروم",
+        "english_name": "Al-Room",
+        "title": "Rome",
+        "is_maki": 1,
+        "total_verses": 60,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "030-Al-Room-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 19,
+                "total_verses": 9,
+                "file_name": "030-Al-Room-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 27,
+                "total_verses": 8,
+                "file_name": "030-Al-Room-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 28,
+                "last_verse": 40,
+                "total_verses": 13,
+                "file_name": "030-Al-Room-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 53,
+                "total_verses": 13,
+                "file_name": "030-Al-Room-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 54,
+                "last_verse": 60,
+                "total_verses": 7,
+                "file_name": "030-Al-Room-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 31,
+        "name": "لقمان",
+        "english_name": "Luqman",
+        "title": "Luqman",
+        "is_maki": 1,
+        "total_verses": 34,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 11,
+                "total_verses": 11,
+                "file_name": "031-Luqman-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 12,
+                "last_verse": 19,
+                "total_verses": 8,
+                "file_name": "031-Luqman-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 30,
+                "total_verses": 11,
+                "file_name": "031-Luqman-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 34,
+                "total_verses": 4,
+                "file_name": "031-Luqman-Ruku-04.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 32,
+        "name": "السجدة",
+        "english_name": "Al-Sajdah",
+        "title": "The Prostration",
+        "is_maki": 1,
+        "total_verses": 30,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 11,
+                "total_verses": 11,
+                "file_name": "032-Al-Sajdah-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 12,
+                "last_verse": 22,
+                "total_verses": 11,
+                "file_name": "032-Al-Sajdah-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 30,
+                "total_verses": 8,
+                "file_name": "032-Al-Sajdah-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 33,
+        "name": "الأحزاب",
+        "english_name": "Al-Ahzab",
+        "title": "The Confederates",
+        "is_maki": 0,
+        "total_verses": 73,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "033-Al-Ahzab-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 9,
+                "last_verse": 20,
+                "total_verses": 12,
+                "file_name": "033-Al-Ahzab-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 27,
+                "total_verses": 7,
+                "file_name": "033-Al-Ahzab-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 28,
+                "last_verse": 34,
+                "total_verses": 7,
+                "file_name": "033-Al-Ahzab-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 35,
+                "last_verse": 40,
+                "total_verses": 6,
+                "file_name": "033-Al-Ahzab-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 52,
+                "total_verses": 12,
+                "file_name": "033-Al-Ahzab-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 53,
+                "last_verse": 58,
+                "total_verses": 6,
+                "file_name": "033-Al-Ahzab-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 59,
+                "last_verse": 68,
+                "total_verses": 10,
+                "file_name": "033-Al-Ahzab-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 69,
+                "last_verse": 73,
+                "total_verses": 5,
+                "file_name": "033-Al-Ahzab-Ruku-09.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 34,
+        "name": "سبإ",
+        "english_name": "Saba",
+        "title": "Sheba",
+        "is_maki": 1,
+        "total_verses": 54,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "034-Saba-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 21,
+                "total_verses": 12,
+                "file_name": "034-Saba-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 22,
+                "last_verse": 30,
+                "total_verses": 9,
+                "file_name": "034-Saba-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 36,
+                "total_verses": 6,
+                "file_name": "034-Saba-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 37,
+                "last_verse": 45,
+                "total_verses": 9,
+                "file_name": "034-Saba-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 46,
+                "last_verse": 54,
+                "total_verses": 9,
+                "file_name": "034-Saba-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 35,
+        "name": "فاطر",
+        "english_name": "Faatir",
+        "title": "The Originator of Creation",
+        "is_maki": 1,
+        "total_verses": 45,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 7,
+                "total_verses": 7,
+                "file_name": "035-Faatir-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 8,
+                "last_verse": 14,
+                "total_verses": 7,
+                "file_name": "035-Faatir-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 15,
+                "last_verse": 26,
+                "total_verses": 12,
+                "file_name": "035-Faatir-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 37,
+                "total_verses": 11,
+                "file_name": "035-Faatir-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 38,
+                "last_verse": 45,
+                "total_verses": 8,
+                "file_name": "035-Faatir-Ruku-05.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 36,
+        "name": "يس",
+        "english_name": "Yaseen",
+        "title": "Ya Sin",
+        "is_maki": 1,
+        "total_verses": 83,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 12,
+                "total_verses": 12,
+                "file_name": "036-Yaseen-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 13,
+                "last_verse": 32,
+                "total_verses": 20,
+                "file_name": "036-Yaseen-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 33,
+                "last_verse": 50,
+                "total_verses": 18,
+                "file_name": "036-Yaseen-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 67,
+                "total_verses": 17,
+                "file_name": "036-Yaseen-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 68,
+                "last_verse": 83,
+                "total_verses": 16,
+                "file_name": "036-Yaseen-Ruku-05.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 37,
+        "name": "الصافات",
+        "english_name": "Al-Safaat",
+        "title": "Those Ranged in Ranks",
+        "is_maki": 1,
+        "total_verses": 182,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 21,
+                "total_verses": 21,
+                "file_name": "037-Al-Safaat-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 22,
+                "last_verse": 74,
+                "total_verses": 53,
+                "file_name": "037-Al-Safaat-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 75,
+                "last_verse": 113,
+                "total_verses": 39,
+                "file_name": "037-Al-Safaat-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 114,
+                "last_verse": 137,
+                "total_verses": 24,
+                "file_name": "037-Al-Safaat-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 138,
+                "last_verse": 182,
+                "total_verses": 45,
+                "file_name": "037-Al-Safaat-Ruku-05.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 38,
+        "name": "ص",
+        "english_name": "Suaad",
+        "title": "Sad",
+        "is_maki": 1,
+        "total_verses": 88,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 14,
+                "total_verses": 14,
+                "file_name": "038-Suaad-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 15,
+                "last_verse": 26,
+                "total_verses": 12,
+                "file_name": "038-Suaad-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 40,
+                "total_verses": 14,
+                "file_name": "038-Suaad-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 64,
+                "total_verses": 24,
+                "file_name": "038-Suaad-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 65,
+                "last_verse": 88,
+                "total_verses": 24,
+                "file_name": "038-Suaad-Ruku-05.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 39,
+        "name": "الزمر",
+        "english_name": "Al-Zumr",
+        "title": "The Groups",
+        "is_maki": 1,
+        "total_verses": 75,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "039-Al-Zumr-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 21,
+                "total_verses": 12,
+                "file_name": "039-Al-Zumr-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 22,
+                "last_verse": 31,
+                "total_verses": 10,
+                "file_name": "039-Al-Zumr-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 32,
+                "last_verse": 41,
+                "total_verses": 10,
+                "file_name": "039-Al-Zumr-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 42,
+                "last_verse": 52,
+                "total_verses": 11,
+                "file_name": "039-Al-Zumr-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 53,
+                "last_verse": 63,
+                "total_verses": 11,
+                "file_name": "039-Al-Zumr-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 64,
+                "last_verse": 70,
+                "total_verses": 7,
+                "file_name": "039-Al-Zumr-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 71,
+                "last_verse": 75,
+                "total_verses": 5,
+                "file_name": "039-Al-Zumr-Ruku-08.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 40,
+        "name": "المومن",
+        "english_name": "Al-Momin(sora40)",
+        "title": "The Forgiver",
+        "is_maki": 1,
+        "total_verses": 85,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "040-Al-Momin(sora40)-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 20,
+                "total_verses": 11,
+                "file_name": "040-Al-Momin(sora40)-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 27,
+                "total_verses": 7,
+                "file_name": "040-Al-Momin(sora40)-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 28,
+                "last_verse": 37,
+                "total_verses": 10,
+                "file_name": "040-Al-Momin(sora40)-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 38,
+                "last_verse": 50,
+                "total_verses": 13,
+                "file_name": "040-Al-Momin(sora40)-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 51,
+                "last_verse": 60,
+                "total_verses": 10,
+                "file_name": "040-Al-Momin(sora40)-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 61,
+                "last_verse": 68,
+                "total_verses": 8,
+                "file_name": "040-Al-Momin(sora40)-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 69,
+                "last_verse": 78,
+                "total_verses": 10,
+                "file_name": "040-Al-Momin(sora40)-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 79,
+                "last_verse": 85,
+                "total_verses": 7,
+                "file_name": "040-Al-Momin(sora40)-Ruku-09.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 41,
+        "name": "السجدة‎",
+        "english_name": "Hameem-Al-Sajdah",
+        "title": "They are Explained in Detail",
+        "is_maki": 1,
+        "total_verses": 54,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "041-Hameem-Al-Sajdah-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 9,
+                "last_verse": 18,
+                "total_verses": 10,
+                "file_name": "041-Hameem-Al-Sajdah-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 19,
+                "last_verse": 25,
+                "total_verses": 7,
+                "file_name": "041-Hameem-Al-Sajdah-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 32,
+                "total_verses": 7,
+                "file_name": "041-Hameem-Al-Sajdah-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 33,
+                "last_verse": 44,
+                "total_verses": 12,
+                "file_name": "041-Hameem-Al-Sajdah-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 45,
+                "last_verse": 54,
+                "total_verses": 10,
+                "file_name": "041-Hameem-Al-Sajdah-Ruku-06.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 42,
+        "name": "الشورى",
+        "english_name": "Al-Shoorah",
+        "title": "The Consultations",
+        "is_maki": 1,
+        "total_verses": 53,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "042-Al-Shoorah-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 19,
+                "total_verses": 10,
+                "file_name": "042-Al-Shoorah-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 29,
+                "total_verses": 10,
+                "file_name": "042-Al-Shoorah-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 30,
+                "last_verse": 43,
+                "total_verses": 14,
+                "file_name": "042-Al-Shoorah-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 44,
+                "last_verse": 53,
+                "total_verses": 10,
+                "file_name": "042-Al-Shoorah-Ruku-05.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 43,
+        "name": "الزخرف",
+        "english_name": "Al-Zukhraf",
+        "title": "The Gold Adornments",
+        "is_maki": 1,
+        "total_verses": 89,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 15,
+                "total_verses": 15,
+                "file_name": "043-Al-Zukhraf-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 16,
+                "last_verse": 25,
+                "total_verses": 10,
+                "file_name": "043-Al-Zukhraf-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 35,
+                "total_verses": 10,
+                "file_name": "043-Al-Zukhraf-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 36,
+                "last_verse": 45,
+                "total_verses": 10,
+                "file_name": "043-Al-Zukhraf-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 46,
+                "last_verse": 56,
+                "total_verses": 11,
+                "file_name": "043-Al-Zukhraf-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 57,
+                "last_verse": 67,
+                "total_verses": 11,
+                "file_name": "043-Al-Zukhraf-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 68,
+                "last_verse": 89,
+                "total_verses": 22,
+                "file_name": "043-Al-Zukhraf-Ruku-07.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 44,
+        "name": "الدخان",
+        "english_name": "Al-Dukhan",
+        "title": "The Smoke",
+        "is_maki": 1,
+        "total_verses": 59,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 29,
+                "total_verses": 29,
+                "file_name": "044-Al-Dukhan-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 30,
+                "last_verse": 42,
+                "total_verses": 13,
+                "file_name": "044-Al-Dukhan-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 43,
+                "last_verse": 59,
+                "total_verses": 17,
+                "file_name": "044-Al-Dukhan-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 45,
+        "name": "الجاثية",
+        "english_name": "Al-Jasiya",
+        "title": "The Kneeling",
+        "is_maki": 1,
+        "total_verses": 37,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 11,
+                "total_verses": 11,
+                "file_name": "045-Al-Jasiya-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 12,
+                "last_verse": 21,
+                "total_verses": 10,
+                "file_name": "045-Al-Jasiya-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 22,
+                "last_verse": 26,
+                "total_verses": 5,
+                "file_name": "045-Al-Jasiya-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 37,
+                "total_verses": 11,
+                "file_name": "045-Al-Jasiya-Ruku-04.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 46,
+        "name": "الأحقاف",
+        "english_name": "Al-Ahqaaf",
+        "title": "The Curved Sand-Hills",
+        "is_maki": 1,
+        "total_verses": 35,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "046-Al-Ahqaaf-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 20,
+                "total_verses": 10,
+                "file_name": "046-Al-Ahqaaf-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 26,
+                "total_verses": 6,
+                "file_name": "046-Al-Ahqaaf-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 35,
+                "total_verses": 9,
+                "file_name": "046-Al-Ahqaaf-Ruku-04.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 47,
+        "name": "محمد",
+        "english_name": "Muhammad",
+        "title": "Muhammad S",
+        "is_maki": 0,
+        "total_verses": 38,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 11,
+                "total_verses": 11,
+                "file_name": "047-Muhammad-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 12,
+                "last_verse": 19,
+                "total_verses": 8,
+                "file_name": "047-Muhammad-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 28,
+                "total_verses": 9,
+                "file_name": "047-Muhammad-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 29,
+                "last_verse": 38,
+                "total_verses": 10,
+                "file_name": "047-Muhammad-Ruku-04.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 48,
+        "name": "الفتح",
+        "english_name": "Al-Fatha",
+        "title": "The Victory",
+        "is_maki": 0,
+        "total_verses": 29,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "048-Al-Fatha-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 17,
+                "total_verses": 7,
+                "file_name": "048-Al-Fatha-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 18,
+                "last_verse": 26,
+                "total_verses": 9,
+                "file_name": "048-Al-Fatha-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 29,
+                "total_verses": 3,
+                "file_name": "048-Al-Fatha-Ruku-04.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 49,
+        "name": "الحجرات",
+        "english_name": "Al-Hujrat",
+        "title": "The Dwellings",
+        "is_maki": 0,
+        "total_verses": 18,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "049-Al-Hujrat-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 18,
+                "total_verses": 8,
+                "file_name": "049-Al-Hujrat-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 50,
+        "name": "ق",
+        "english_name": "Qaaf",
+        "title": "Qaaf",
+        "is_maki": 1,
+        "total_verses": 45,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 15,
+                "total_verses": 15,
+                "file_name": "050-Qaaf-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 16,
+                "last_verse": 29,
+                "total_verses": 14,
+                "file_name": "050-Qaaf-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 30,
+                "last_verse": 45,
+                "total_verses": 16,
+                "file_name": "050-Qaaf-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 51,
+        "name": "الذاريات",
+        "english_name": "Al-Zarriyaat",
+        "title": "The Winds that Scatter",
+        "is_maki": 1,
+        "total_verses": 60,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 23,
+                "total_verses": 23,
+                "file_name": "051-Al-Zarriyaat-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 24,
+                "last_verse": 46,
+                "total_verses": 23,
+                "file_name": "051-Al-Zarriyaat-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 47,
+                "last_verse": 60,
+                "total_verses": 14,
+                "file_name": "051-Al-Zarriyaat-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 52,
+        "name": "الطور",
+        "english_name": "Al-Toor",
+        "title": "The Mount",
+        "is_maki": 1,
+        "total_verses": 49,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 28,
+                "total_verses": 28,
+                "file_name": "052-Al-Toor-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 29,
+                "last_verse": 49,
+                "total_verses": 21,
+                "file_name": "052-Al-Toor-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 53,
+        "name": "النجم",
+        "english_name": "Al-Najam",
+        "title": "The Star",
+        "is_maki": 1,
+        "total_verses": 62,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 25,
+                "total_verses": 25,
+                "file_name": "053-Al-Najam-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 32,
+                "total_verses": 7,
+                "file_name": "053-Al-Najam-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 33,
+                "last_verse": 62,
+                "total_verses": 30,
+                "file_name": "053-Al-Najam-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 54,
+        "name": "القمر",
+        "english_name": "Al-Qamar",
+        "title": "The Moon",
+        "is_maki": 1,
+        "total_verses": 55,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 22,
+                "total_verses": 22,
+                "file_name": "054-Al-Qamar-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 40,
+                "total_verses": 18,
+                "file_name": "054-Al-Qamar-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 41,
+                "last_verse": 55,
+                "total_verses": 15,
+                "file_name": "054-Al-Qamar-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 55,
+        "name": "الرحمن",
+        "english_name": "Ar-Rehman",
+        "title": "The Most Gracious",
+        "is_maki": 0,
+        "total_verses": 78,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 25,
+                "total_verses": 25,
+                "file_name": "055-Ar-Rehman-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 45,
+                "total_verses": 20,
+                "file_name": "055-Ar-Rehman-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 46,
+                "last_verse": 78,
+                "total_verses": 33,
+                "file_name": "055-Ar-Rehman-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 56,
+        "name": "الواقعة",
+        "english_name": "Al-Waqiya",
+        "title": "The Event",
+        "is_maki": 1,
+        "total_verses": 96,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 38,
+                "total_verses": 38,
+                "file_name": "056-Al-Waqiya-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 39,
+                "last_verse": 74,
+                "total_verses": 36,
+                "file_name": "056-Al-Waqiya-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 75,
+                "last_verse": 96,
+                "total_verses": 22,
+                "file_name": "056-Al-Waqiya-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 57,
+        "name": "الحديد",
+        "english_name": "Al-Hadeed",
+        "title": "Iron",
+        "is_maki": 0,
+        "total_verses": 29,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "057-Al-Hadeed-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 19,
+                "total_verses": 9,
+                "file_name": "057-Al-Hadeed-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 25,
+                "total_verses": 6,
+                "file_name": "057-Al-Hadeed-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 26,
+                "last_verse": 29,
+                "total_verses": 4,
+                "file_name": "057-Al-Hadeed-Ruku-04.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 58,
+        "name": "المجادلة",
+        "english_name": "Al-Mujadlah",
+        "title": "The Woman Who Disputes",
+        "is_maki": 0,
+        "total_verses": 22,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 6,
+                "total_verses": 6,
+                "file_name": "058-Al-Mujadlah-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 7,
+                "last_verse": 13,
+                "total_verses": 7,
+                "file_name": "058-Al-Mujadlah-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 14,
+                "last_verse": 22,
+                "total_verses": 9,
+                "file_name": "058-Al-Mujadlah-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 59,
+        "name": "الحشر",
+        "english_name": "Al-Hashar",
+        "title": "The Gathering",
+        "is_maki": 0,
+        "total_verses": 24,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "059-Al-Hashar-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 17,
+                "total_verses": 7,
+                "file_name": "059-Al-Hashar-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 18,
+                "last_verse": 24,
+                "total_verses": 7,
+                "file_name": "059-Al-Hashar-Ruku-03.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 60,
+        "name": "الممتحنة",
+        "english_name": "Al-Mumtinah",
+        "title": "The Woman to be examined",
+        "is_maki": 0,
+        "total_verses": 13,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 6,
+                "total_verses": 6,
+                "file_name": "060-Al-Mumtinah-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 7,
+                "last_verse": 13,
+                "total_verses": 7,
+                "file_name": "060-Al-Mumtinah-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 61,
+        "name": "الصف",
+        "english_name": "Al-Saff",
+        "title": "The Row or Rank",
+        "is_maki": 0,
+        "total_verses": 14,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "061-Al-Saff-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 14,
+                "total_verses": 5,
+                "file_name": "061-Al-Saff-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 62,
+        "name": "الجمعة",
+        "english_name": "Al-Juma",
+        "title": "Friday",
+        "is_maki": 0,
+        "total_verses": 11,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "062-Al-Juma-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 9,
+                "last_verse": 11,
+                "total_verses": 3,
+                "file_name": "062-Al-Juma-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 63,
+        "name": "المنافقون",
+        "english_name": "Al-Munafiqoon",
+        "title": "The Hypocrites",
+        "is_maki": 0,
+        "total_verses": 11,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "063-Al-Munafiqoon-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 9,
+                "last_verse": 11,
+                "total_verses": 3,
+                "file_name": "063-Al-Munafiqoon-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 64,
+        "name": "التغابن",
+        "english_name": "Al-Taghabun",
+        "title": "Mutual Loss and Gain",
+        "is_maki": 0,
+        "total_verses": 18,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 10,
+                "total_verses": 10,
+                "file_name": "064-Al-Taghabun-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 11,
+                "last_verse": 18,
+                "total_verses": 8,
+                "file_name": "064-Al-Taghabun-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 65,
+        "name": "الطلاق",
+        "english_name": "Al-Talaq",
+        "title": "The Divorce",
+        "is_maki": 0,
+        "total_verses": 12,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 7,
+                "total_verses": 7,
+                "file_name": "065-Al-Talaq-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 8,
+                "last_verse": 12,
+                "total_verses": 5,
+                "file_name": "065-Al-Talaq-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 66,
+        "name": "التحريم",
+        "english_name": "Al-Tahreem",
+        "title": "The Prohibition",
+        "is_maki": 0,
+        "total_verses": 12,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 7,
+                "total_verses": 7,
+                "file_name": "066-Al-Tahreem-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 8,
+                "last_verse": 12,
+                "total_verses": 5,
+                "file_name": "066-Al-Tahreem-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 67,
+        "name": "الملك",
+        "english_name": "Al-Mulk",
+        "title": "Dominion",
+        "is_maki": 1,
+        "total_verses": 30,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 14,
+                "total_verses": 14,
+                "file_name": "067-Al-Mulk-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 15,
+                "last_verse": 30,
+                "total_verses": 16,
+                "file_name": "067-Al-Mulk-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 68,
+        "name": "القلم",
+        "english_name": "Al-Qalam",
+        "title": "The Pen",
+        "is_maki": 1,
+        "total_verses": 52,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 33,
+                "total_verses": 33,
+                "file_name": "068-Al-Qalam-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 34,
+                "last_verse": 52,
+                "total_verses": 19,
+                "file_name": "068-Al-Qalam-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 69,
+        "name": "الحاقة",
+        "english_name": "Al-Haqqah",
+        "title": "The Inevitable",
+        "is_maki": 1,
+        "total_verses": 52,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 37,
+                "total_verses": 37,
+                "file_name": "069-Al-Haqqah-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 38,
+                "last_verse": 52,
+                "total_verses": 15,
+                "file_name": "069-Al-Haqqah-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 70,
+        "name": "المعارج",
+        "english_name": "Al-Muarij",
+        "title": "The Ways of Ascent",
+        "is_maki": 1,
+        "total_verses": 44,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 35,
+                "total_verses": 35,
+                "file_name": "070-Al-Muarij-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 36,
+                "last_verse": 44,
+                "total_verses": 9,
+                "file_name": "070-Al-Muarij-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 71,
+        "name": "نوح",
+        "english_name": "Nuh",
+        "title": "Noah",
+        "is_maki": 1,
+        "total_verses": 28,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 20,
+                "total_verses": 20,
+                "file_name": "071-Nuh-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 28,
+                "total_verses": 8,
+                "file_name": "071-Nuh-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 72,
+        "name": "الجن",
+        "english_name": "Al-Jinn",
+        "title": "The Jinn",
+        "is_maki": 1,
+        "total_verses": 28,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 19,
+                "total_verses": 19,
+                "file_name": "072-Al-Jinn-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 28,
+                "total_verses": 9,
+                "file_name": "072-Al-Jinn-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 73,
+        "name": "المزمل",
+        "english_name": "Al-Muzzamil",
+        "title": "The One Wraped in Garments",
+        "is_maki": 1,
+        "total_verses": 20,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 19,
+                "total_verses": 19,
+                "file_name": "073-Al-Muzzamil-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 20,
+                "last_verse": 20,
+                "total_verses": 1,
+                "file_name": "073-Al-Muzzamil-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 74,
+        "name": "المدثر",
+        "english_name": "Al-Muddasir",
+        "title": "The One Enveloped",
+        "is_maki": 1,
+        "total_verses": 56,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 31,
+                "total_verses": 31,
+                "file_name": "074-Al-Muddasir-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 32,
+                "last_verse": 56,
+                "total_verses": 25,
+                "file_name": "074-Al-Muddasir-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 75,
+        "name": "القيامة",
+        "english_name": "Al-Qiyyamah",
+        "title": "The Resurrection",
+        "is_maki": 1,
+        "total_verses": 40,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 30,
+                "total_verses": 30,
+                "file_name": "075-Al-Qiyyamah-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 40,
+                "total_verses": 10,
+                "file_name": "075-Al-Qiyyamah-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 76,
+        "name": "الدهر",
+        "english_name": "Al-Dahar",
+        "title": "Man or Time",
+        "is_maki": 0,
+        "total_verses": 31,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 22,
+                "total_verses": 22,
+                "file_name": "076-Al-Dahar-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 23,
+                "last_verse": 31,
+                "total_verses": 9,
+                "file_name": "076-Al-Dahar-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 77,
+        "name": "المرسلات",
+        "english_name": "Al-Mursalat",
+        "title": "Those sent forth",
+        "is_maki": 1,
+        "total_verses": 50,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 39,
+                "total_verses": 39,
+                "file_name": "077-Al-Mursalat-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 40,
+                "last_verse": 50,
+                "total_verses": 11,
+                "file_name": "077-Al-Mursalat-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 78,
+        "name": "النبإ",
+        "english_name": "Al-Naba",
+        "title": "The Great News",
+        "is_maki": 1,
+        "total_verses": 40,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 29,
+                "total_verses": 29,
+                "file_name": "078-Al-Naba-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 30,
+                "last_verse": 40,
+                "total_verses": 11,
+                "file_name": "078-Al-Naba-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 79,
+        "name": "النازعات",
+        "english_name": "An-Naziaat",
+        "title": "Those Who Pull Out",
+        "is_maki": 1,
+        "total_verses": 46,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 26,
+                "total_verses": 26,
+                "file_name": "079-An-Naziaat-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 27,
+                "last_verse": 46,
+                "total_verses": 20,
+                "file_name": "079-An-Naziaat-Ruku-02.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 80,
+        "name": "عبس",
+        "english_name": "Al-Abas",
+        "title": "He Frowned",
+        "is_maki": 1,
+        "total_verses": 42,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 42,
+                "total_verses": 42,
+                "file_name": "080-Al-Abas-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 81,
+        "name": "التكوير",
+        "english_name": "Al-Takwir",
+        "title": "Wound Round and Lost its Light",
+        "is_maki": 1,
+        "total_verses": 29,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 29,
+                "total_verses": 29,
+                "file_name": "081-Al-Takwir-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 82,
+        "name": "الإنفطار",
+        "english_name": "Al-Infitar",
+        "title": "The Cleaving",
+        "is_maki": 1,
+        "total_verses": 19,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 19,
+                "total_verses": 19,
+                "file_name": "082-Al-Infitar-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 83,
+        "name": "المطففين",
+        "english_name": "Al-Mutafafin",
+        "title": "Those Who Deal in Fraud",
+        "is_maki": 1,
+        "total_verses": 36,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 36,
+                "total_verses": 36,
+                "file_name": "083-Al-Mutafafin-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 84,
+        "name": "الإنشقاق",
+        "english_name": "Al-Inshiqaq",
+        "title": "The Splitting Asunder",
+        "is_maki": 1,
+        "total_verses": 25,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 25,
+                "total_verses": 25,
+                "file_name": "084-Al-Inshiqaq-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 85,
+        "name": "البروج",
+        "english_name": "Al-Buruj",
+        "title": "The Big Stars",
+        "is_maki": 1,
+        "total_verses": 22,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 22,
+                "total_verses": 22,
+                "file_name": "085-Al-Buruj-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 86,
+        "name": "الطارق",
+        "english_name": "Al-Tariq",
+        "title": "The Night Commer",
+        "is_maki": 1,
+        "total_verses": 17,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 17,
+                "total_verses": 17,
+                "file_name": "086-Al-Tariq-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 87,
+        "name": "الأعلى",
+        "english_name": "Al-Aala",
+        "title": "The Most High",
+        "is_maki": 1,
+        "total_verses": 19,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 19,
+                "total_verses": 19,
+                "file_name": "087-Al-Aala-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 88,
+        "name": "الغاشية",
+        "english_name": "Al-Ghashiyah",
+        "title": "The Overwhelming",
+        "is_maki": 1,
+        "total_verses": 26,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 26,
+                "total_verses": 26,
+                "file_name": "088-Al-Ghashiyah-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 89,
+        "name": "الفجر",
+        "english_name": "Al-Fajar",
+        "title": "The Break of Day or The Dawn",
+        "is_maki": 1,
+        "total_verses": 30,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 30,
+                "total_verses": 30,
+                "file_name": "089-Al-Fajar-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 90,
+        "name": "البلد",
+        "english_name": "Al-Balad",
+        "title": "The City",
+        "is_maki": 1,
+        "total_verses": 20,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 20,
+                "total_verses": 20,
+                "file_name": "090-Al-Balad-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 91,
+        "name": "الشمس",
+        "english_name": "Al-Shams",
+        "title": "The Sun",
+        "is_maki": 1,
+        "total_verses": 15,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 15,
+                "total_verses": 15,
+                "file_name": "091-Al-Shams-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 92,
+        "name": "الليل",
+        "english_name": "Al-Lail",
+        "title": "The Night",
+        "is_maki": 1,
+        "total_verses": 21,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 21,
+                "total_verses": 21,
+                "file_name": "092-Al-Lail-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 93,
+        "name": "الضحى",
+        "english_name": "Al-Duha",
+        "title": "The Forenoon",
+        "is_maki": 1,
+        "total_verses": 11,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 11,
+                "total_verses": 11,
+                "file_name": "093-Al-Duha-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 94,
+        "name": "الشرح",
+        "english_name": "Al-Nashrah",
+        "title": "The Opening Forth",
+        "is_maki": 1,
+        "total_verses": 8,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "094-Al-Nashrah-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 95,
+        "name": "التين",
+        "english_name": "Al-Teen",
+        "title": "The Fig",
+        "is_maki": 1,
+        "total_verses": 8,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "095-Al-Teen-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 96,
+        "name": "العلق",
+        "english_name": "Al-Alaq",
+        "title": "The Clot",
+        "is_maki": 1,
+        "total_verses": 19,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 19,
+                "total_verses": 19,
+                "file_name": "096-Al-Alaq-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 97,
+        "name": "القدر",
+        "english_name": "Al-Qadar",
+        "title": "The Night of Decree",
+        "is_maki": 1,
+        "total_verses": 5,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 5,
+                "total_verses": 5,
+                "file_name": "097-Al-Qadar-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 98,
+        "name": "البينة",
+        "english_name": "Al-Bayyinah",
+        "title": "The Clear Evidence",
+        "is_maki": 0,
+        "total_verses": 8,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "098-Al-Bayyinah-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 99,
+        "name": "الزلزلة",
+        "english_name": "Al-Zilzal",
+        "title": "The Earthquake",
+        "is_maki": 0,
+        "total_verses": 8,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "099-Al-Zilzal-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 100,
+        "name": "العاديات",
+        "english_name": "Al-Aadiat",
+        "title": "Those That Run",
+        "is_maki": 1,
+        "total_verses": 11,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 11,
+                "total_verses": 11,
+                "file_name": "100-Al-Aadiat-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 101,
+        "name": "القارعة",
+        "english_name": "Al-Qariyah",
+        "title": "The Striking Hour",
+        "is_maki": 1,
+        "total_verses": 11,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 11,
+                "total_verses": 11,
+                "file_name": "101-Al-Qariyah-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 102,
+        "name": "التكاثر",
+        "english_name": "Al-Takasur",
+        "title": "The Piling Up",
+        "is_maki": 1,
+        "total_verses": 8,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 8,
+                "total_verses": 8,
+                "file_name": "102-Al-Takasur-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 103,
+        "name": "العصر",
+        "english_name": "Al-Aasar",
+        "title": "The Time",
+        "is_maki": 1,
+        "total_verses": 3,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 3,
+                "total_verses": 3,
+                "file_name": "103-Al-Aasar-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 104,
+        "name": "الهمزة",
+        "english_name": "Al-Humzah",
+        "title": "The Slanderer",
+        "is_maki": 1,
+        "total_verses": 9,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "104-Al-Humzah-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 105,
+        "name": "الفيل",
+        "english_name": "Al-Feel",
+        "title": "The Elephant",
+        "is_maki": 1,
+        "total_verses": 5,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 5,
+                "total_verses": 5,
+                "file_name": "105-Al-Feel-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 106,
+        "name": "قريش",
+        "english_name": "Al-Quraish",
+        "title": "Quraish",
+        "is_maki": 1,
+        "total_verses": 4,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 4,
+                "total_verses": 4,
+                "file_name": "106-Al-Quraish-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 107,
+        "name": "الماعون",
+        "english_name": "Al-Maoon",
+        "title": "The Small Kindness",
+        "is_maki": 1,
+        "total_verses": 7,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 7,
+                "total_verses": 7,
+                "file_name": "107-Al-Maoon-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 108,
+        "name": "الكوثر",
+        "english_name": "Al-Kausar",
+        "title": "The River in Paradise",
+        "is_maki": 1,
+        "total_verses": 3,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 3,
+                "total_verses": 3,
+                "file_name": "108-Al-Kausar-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 109,
+        "name": "الكافرون",
+        "english_name": "Al-Kafirun",
+        "title": "The Disbelievers",
+        "is_maki": 1,
+        "total_verses": 6,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 6,
+                "total_verses": 6,
+                "file_name": "109-Al-Kafirun-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 110,
+        "name": "النصر",
+        "english_name": "Al-Nasar",
+        "title": "The Help",
+        "is_maki": 0,
+        "total_verses": 3,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 3,
+                "total_verses": 3,
+                "file_name": "110-Al-Nasar-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 111,
+        "name": "اللهب",
+        "english_name": "Al-Lahab",
+        "title": "The Palm Fibre",
+        "is_maki": 1,
+        "total_verses": 5,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 5,
+                "total_verses": 5,
+                "file_name": "111-Al-Lahab-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 112,
+        "name": "الإخلاص",
+        "english_name": "Al-Ikhlas",
+        "title": "The Purity",
+        "is_maki": 1,
+        "total_verses": 4,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 4,
+                "total_verses": 4,
+                "file_name": "112-Al-Ikhlas-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 113,
+        "name": "الفلق",
+        "english_name": "Al-Falaq",
+        "title": "The Daybreak",
+        "is_maki": 1,
+        "total_verses": 5,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 5,
+                "total_verses": 5,
+                "file_name": "113-Al-Falaq-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 114,
+        "name": "الناس",
+        "english_name": "Al-Naas",
+        "title": "Mankind",
+        "is_maki": 1,
+        "total_verses": 6,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 6,
+                "total_verses": 6,
+                "file_name": "114-Al-Naas-Ruku-01.mp3"
+            }
+        ]
+    }
+]

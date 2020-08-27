@@ -22,5 +22,5 @@ class Constant {
   ];
 
   static List<Chapter> CHAPTER_LIST;
-  static Directory DOWNLOAD_DIR_PATH;
+  static Directory DOWNLOAD_DIR;
 }

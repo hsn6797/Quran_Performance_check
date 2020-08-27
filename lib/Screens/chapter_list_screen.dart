@@ -21,6 +21,7 @@ class _ChapterListScreenState extends State<ChapterListScreen>
   static double tileHeight = 120.0;
 
   /* ------------------ Screen Lifecycle Methods ------------------ */
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,8 +49,8 @@ class _ChapterListScreenState extends State<ChapterListScreen>
                         context,
                         screen: VerseListScreen(
                           chapter_no: chapter.ind,
-                          rukus: chapter.ruku_mapping,
-                          title: '${chapter.english_name}',
+//                          rukus: chapter.ruku_mapping,
+//                          title: '${chapter.english_name}',
                         ),
                       );
                     },
@@ -150,7 +151,7 @@ class _ChapterListScreenState extends State<ChapterListScreen>
     WidgetsBinding.instance.addObserver(this);
     print('Init Called!!');
 
-//    get all chapters list
+    // get all chapters list
     init();
   }
 
@@ -198,10 +199,18 @@ class _ChapterListScreenState extends State<ChapterListScreen>
     List<String> lis = Functions.splitString(value, "|");
     if (lis != null) {
       int chapter = int.parse(lis[0]);
-//      _scrollController.jumpTo(chapter * tileHeight);
-      setState(() {
-        chapNo = chapter;
-      });
+      chapNo = chapter;
+
+      await Functions.changeScreen(
+        context,
+        screen: VerseListScreen(
+          chapter_no: chapNo,
+//        rukus: chapter.ruku_mapping,
+//        title: '${chapter.english_name}',
+        ),
+      );
+      _scrollController.jumpTo((chapNo - 1) * tileHeight);
+//      setState(() {});
     }
   }
 

@@ -25,8 +25,8 @@ class CustomSharedPreferences {
       if (value != null) {
         return toObjectValue(value);
       }
-      return QuranScript.NONE;
     }
+    return QuranScript.Arabic_Urdu;
   }
 
   static Future<String> getBookmark() async {

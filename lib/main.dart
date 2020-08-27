@@ -11,7 +11,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await _loadChapters();
   // - Get the download directory in App Storage
-  Constant.DOWNLOAD_DIR_PATH = await FileHelper.instance.downloadsDir;
+//  Constant.DOWNLOAD_DIR = await FileHelper.instance.downloadsDir;
+//  print(Constant.DOWNLOAD_DIR.path);
   runApp(MyApp());
 }
 

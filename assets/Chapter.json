@@ -1,8 +1,154 @@
 [
     {
+        "ind": 1,
+        "name": "الفاتحة",
+        "english_name": "Al-Fatiha",
+        "title": "The Opening",
+        "is_maki": 1,
+        "total_verses": 7,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 7,
+                "total_verses": 7,
+                "file_name": "001-Al-Fatiha-Ruku-01.mp3"
+            }
+        ]
+    },
+    {
+        "ind": 3,
+        "name": "آل عمران",
+        "english_name": "Ale-Imran",
+        "title": "The Family of Imran",
+        "is_maki": 0,
+        "total_verses": 200,
+        "ruku_mapping": [
+            {
+                "first_verse": 1,
+                "last_verse": 9,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-01.mp3"
+            },
+            {
+                "first_verse": 10,
+                "last_verse": 20,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-02.mp3"
+            },
+            {
+                "first_verse": 21,
+                "last_verse": 30,
+                "total_verses": 10,
+                "file_name": "003-Ale-Imran-Ruku-03.mp3"
+            },
+            {
+                "first_verse": 31,
+                "last_verse": 41,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-04.mp3"
+            },
+            {
+                "first_verse": 42,
+                "last_verse": 54,
+                "total_verses": 13,
+                "file_name": "003-Ale-Imran-Ruku-05.mp3"
+            },
+            {
+                "first_verse": 55,
+                "last_verse": 62,
+                "total_verses": 8,
+                "file_name": "003-Ale-Imran-Ruku-06.mp3"
+            },
+            {
+                "first_verse": 63,
+                "last_verse": 71,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-07.mp3"
+            },
+            {
+                "first_verse": 72,
+                "last_verse": 80,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-08.mp3"
+            },
+            {
+                "first_verse": 81,
+                "last_verse": 91,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-09.mp3"
+            },
+            {
+                "first_verse": 92,
+                "last_verse": 101,
+                "total_verses": 10,
+                "file_name": "003-Ale-Imran-Ruku-10.mp3"
+            },
+            {
+                "first_verse": 102,
+                "last_verse": 109,
+                "total_verses": 8,
+                "file_name": "003-Ale-Imran-Ruku-11.mp3"
+            },
+            {
+                "first_verse": 110,
+                "last_verse": 120,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-12.mp3"
+            },
+            {
+                "first_verse": 121,
+                "last_verse": 129,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-13.mp3"
+            },
+            {
+                "first_verse": 130,
+                "last_verse": 143,
+                "total_verses": 14,
+                "file_name": "003-Ale-Imran-Ruku-14.mp3"
+            },
+            {
+                "first_verse": 144,
+                "last_verse": 148,
+                "total_verses": 5,
+                "file_name": "003-Ale-Imran-Ruku-15.mp3"
+            },
+            {
+                "first_verse": 149,
+                "last_verse": 155,
+                "total_verses": 7,
+                "file_name": "003-Ale-Imran-Ruku-16.mp3"
+            },
+            {
+                "first_verse": 156,
+                "last_verse": 177,
+                "total_verses": 22,
+                "file_name": "003-Ale-Imran-Ruku-17.mp3"
+            },
+            {
+                "first_verse": 178,
+                "last_verse": 180,
+                "total_verses": 3,
+                "file_name": "003-Ale-Imran-Ruku-18.mp3"
+            },
+            {
+                "first_verse": 181,
+                "last_verse": 189,
+                "total_verses": 9,
+                "file_name": "003-Ale-Imran-Ruku-19.mp3"
+            },
+            {
+                "first_verse": 190,
+                "last_verse": 200,
+                "total_verses": 11,
+                "file_name": "003-Ale-Imran-Ruku-20.mp3"
+            }
+        ]
+    },
+    {
         "ind": 30,
         "name": "الروم",
-        "english_name": "Al Room",
+        "english_name": "Al-Room",
         "title": "Rome",
         "is_maki": 1,
         "total_verses": 60,
@@ -48,7 +194,7 @@
     {
         "ind": 73,
         "name": "المزمل",
-        "english_name": "Al Muzzamil",
+        "english_name": "Al-Muzzamil",
         "title": "The One Wraped in Garments",
         "is_maki": 1,
         "total_verses": 20,
@@ -70,7 +216,7 @@
     {
         "ind": 112,
         "name": "الإخلاص",
-        "english_name": "Al Ikhlas",
+        "english_name": "Al-Ikhlas",
         "title": "The Purity",
         "is_maki": 1,
         "total_verses": 4,
@@ -86,7 +232,7 @@
     {
         "ind": 113,
         "name": "الفلق",
-        "english_name": "Al Falaq",
+        "english_name": "Al-Falaq",
         "title": "The Daybreak",
         "is_maki": 1,
         "total_verses": 5,
@@ -102,7 +248,7 @@
     {
         "ind": 114,
         "name": "الناس",
-        "english_name": "Al Naas",
+        "english_name": "Al-Naas",
         "title": "Mankind",
         "is_maki": 1,
         "total_verses": 6,
@@ -111,7 +257,7 @@
                 "first_verse": 1,
                 "last_verse": 6,
                 "total_verses": 6,
-                "file_name": "114-Al-Nass-Ruku-01.mp3"
+                "file_name": "114-Al-Naas-Ruku-01.mp3"
             }
         ]
     }
